@@ -21,7 +21,6 @@
   letter-spacing: 0.03em;
 }
 
-/* ── LAYOUT: colonna sx | mappa | colonna dx ── */
 .viaggi-main {
   display: grid;
   grid-template-columns: 160px 1fr 160px;
@@ -30,7 +29,6 @@
   margin-bottom: 48px;
 }
 
-/* ── COLONNE DESTINAZIONI ── */
 .dest-col { display: flex; flex-direction: column; gap: 10px; }
 .dest-col.left  { align-items: flex-end; }
 .dest-col.right { align-items: flex-start; }
@@ -57,7 +55,6 @@
   color: var(--rose-dark);
 }
 
-/* ── MAPPA ── */
 .map-wrap {
   position: relative;
   border-radius: 28px;
@@ -75,7 +72,6 @@
   display: block;
 }
 
-/* ── PIN MAPPA ── */
 .map-pin {
   position: absolute;
   width: 18px;
@@ -102,7 +98,6 @@
   background: var(--rose-dark);
 }
 
-/* ── GALLERIA FOTO ── */
 .viaggi-gallery { display: none; animation: fadeUp 0.4s ease; }
 .viaggi-gallery.active { display: block; }
 
@@ -135,7 +130,7 @@
 
 .gallery-card-img {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 4/4;
   object-fit: cover;
   display: block;
   background: var(--rose-light);
@@ -157,7 +152,6 @@
   color: var(--mid);
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 820px) {
   .viaggi-main { grid-template-columns: 1fr; }
   .dest-col { flex-direction: row; flex-wrap: wrap; justify-content: center; }
