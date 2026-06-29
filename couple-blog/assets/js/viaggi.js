@@ -22,13 +22,19 @@ const DESTINATIONS = [
         loc: 'Costiera Amalfitana',
         desc_it: 'La strada più bella del mondo, punto.',
         desc_fr: 'La plus belle route du monde, point.',
-        img: 'assets/img/amalfi.jpg'
+        img: 'assets/img/vespa.jpg'
       },
       {
         loc: 'Saint-Malo',
         desc_it: 'Il nostro angolo segreto sui Monti Simbruini, lontano da tutto.',
         desc_fr: 'Notre coin secret dans les Monti Simbruini, loin de tout.',
         img: 'assets/img/saintmalo.jpg'
+      },
+      {
+        loc: 'Côtes-dArmor',
+        desc_it: 'Il nostro angolo segreto sui Monti Simbruini, lontano da tutto.',
+        desc_fr: 'Notre coin secret dans les Monti Simbruini, loin de tout.',
+        img: 'assets/img/granito.jpg'
       },
     ]
   },
@@ -64,19 +70,25 @@ const DESTINATIONS = [
         loc: 'Salento',
         desc_it: 'Aperitivi in Navigli, la Madonnina e mille posti nuovi da scoprire.',
         desc_fr: 'Apéros aux Navigli, la Madonnina et mille nouveaux endroits à découvrir.',
-        img: 'assets/img/milano.jpg'
+        img: 'assets/img/salento.jpg'
       },
       {
         loc: 'Galapagos',
         desc_it: 'Cinque paesi colorati abbarbicati sulle scogliere liguri.',
         desc_fr: 'Cinq villages colorés accrochés aux falaises liguriennes.',
-        img: 'assets/img/cinqueterre.jpg'
+        img: 'assets/img/galapagos.jpg'
       },
       {
         loc: 'Casa en el agua',
         desc_it: 'Cinque paesi colorati abbarbicati sulle scogliere liguri.',
         desc_fr: 'Cinq villages colorés accrochés aux falaises liguriennes.',
-        img: 'assets/img/cinqueterre.jpg'
+        img: 'assets/img/casaagua.jpg'
+      },
+      {
+        loc: 'Tayrona',
+        desc_it: 'Cinque paesi colorati abbarbicati sulle scogliere liguri.',
+        desc_fr: 'Cinq villages colorés accrochés aux falaises liguriennes.',
+        img: 'assets/img/tayrona.jpg'
       },
     ]
   },
@@ -88,22 +100,28 @@ const DESTINATIONS = [
     col: 'right',
     places: [
       {
-        loc: 'Istanbul',
+        loc: 'Instabul',
         desc_it: 'Pizza, caos e bellezza assoluta. Napoli non si spiega, si vive.',
         desc_fr: 'Pizza, chaos et beauté absolue. Naples ne s\'explique pas, elle se vit.',
+        img: 'assets/img/instabul.jpg'
+      },
+      {
+        loc: 'Cappadocia',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
         img: 'assets/img/turchia.jpg'
       },
       {
         loc: 'Cappadocia',
         desc_it: 'La strada più bella del mondo, punto.',
         desc_fr: 'La plus belle route du monde, point.',
-        img: 'assets/img/amalfi.jpg'
+        img: 'assets/img/mongolfiere.jpg'
       },
       {
         loc: 'Pamukkale',
         desc_it: 'Mare cristallino e spiagge di sabbia bianca da sogno.',
         desc_fr: 'Mer cristalline et plages de sable blanc de rêve.',
-        img: 'assets/img/sardegna.jpg'
+        img: 'assets/img/pamukkale.jpg'
       },
     ]
   }
