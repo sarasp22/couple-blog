@@ -19,17 +19,13 @@ const uiStrings = {
     it: "Clicca qui per più dettagli",
     fr: "Cliquez ici pour plus de détails"
   },
-  heroFooter: {
-    it: "Creato da Sara per Jordan con tanto amore ©2026",
-    fr: "Créé par Sara pour Jordan avec beaucoup d'amour ©2026"
-  },
   tlHeading:  {
     it: "La nostra <span class='accent'>storia:</span>",
     fr: "Notre <span class='accent'>histoire :</span>"
   },
-  tlFooter:   {
-    it: "Creato da Sara per Jordan con tanto amore ©2026",
-    fr: "Créé par Sara pour Jordan avec beaucoup d'amour ©2026"
+  tlSub: {
+    it: "Clicca sulle date per scoprire ogni momento",
+    fr: "Clique sur les dates pour découvrir chaque moment"
   },
   saraOverlay:   { it: "SCOPRI", fr: "DÉCOUVRIR" },
   jordanOverlay: { it: "SCOPRI", fr: "DÉCOUVRIR" },
@@ -37,6 +33,10 @@ const uiStrings = {
   viaggiSub:     {
     it: "Clicca sulla mappa per scoprire i nostri ricordi più belli",
     fr: "Clique sur la carte pour découvrir nos plus beaux souvenirs"
+  },
+  siteFooter: {
+    it: "Creato da Sara per Jordan con tanto amore ©2026",
+    fr: "Créé par Sara pour Jordan avec beaucoup d'amour ©2026"
   },
 };
 

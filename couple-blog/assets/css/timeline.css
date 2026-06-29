@@ -1,8 +1,4 @@
-/* ══════════════════════════════════════════════
-   TIMELINE.CSS — linea cronologica + event cards
-   ══════════════════════════════════════════════ */
-
-/* ── WRAPPER (chiuso/aperto) ── */
+/* ── WRAPPER ── */
 #timeline-section {
   max-height: 0;
   overflow: hidden;
@@ -25,6 +21,15 @@
   margin-bottom: 48px;
 }
 .tl-heading .accent { color: var(--rose); }
+
+.tl-subheading {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--mid);
+  margin-top: -32px;
+  margin-bottom: 40px;
+  letter-spacing: 0.03em;
+}
 
 /* ── TRACK ── */
 .tl-track-wrap {
@@ -50,7 +55,7 @@
   z-index: 1;
 }
 
-/* ── SINGOLO ITEM ── */
+/* ── SINGLE ITEM ── */
 .tl-item {
   display: flex;
   flex-direction: column;
@@ -104,8 +109,8 @@
 }
 
 .ev-img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 500px;
   object-fit: cover;
   border-radius: 24px;
   display: block;
@@ -127,7 +132,7 @@
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-/* bottone sovrapposto all'immagine */
+/* casa bottom */
 .ev-img-btn {
   position: absolute;
   bottom: 18px;
@@ -155,7 +160,7 @@
   transform: translateX(-50%) translateY(-2px);
 }
 
-/* ── TESTO ── */
+/* ── text ── */
 .ev-text { flex: 1; padding-top: 4px; }
 
 .ev-tag {

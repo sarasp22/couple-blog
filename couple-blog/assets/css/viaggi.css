@@ -3,6 +3,7 @@
    ══════════════════════════════════════════════ */
 
 #viaggi-section {
+  display: none;
   padding: 80px 40px 100px;
   max-width: 1000px;
   margin: 0 auto;

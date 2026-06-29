@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- ── BOTTONE LINGUA ── -->
+  <!-- ── language bottom ── -->
   <button class="lang-btn" id="langBtn" onclick="toggleLang()">🇫🇷 FR</button>
 
   <!-- ══════════════════════════════════════
@@ -29,33 +29,29 @@
         Clicca su Sara o Jordan per conoscerci meglio
       </p>
 
-      <!-- Avatars cliccabili -->
+      <!-- Avatars -->
       <div class="avatars">
         <a href="sara.html" class="avatar-wrap">
           <div class="avatar-frame">
-            <img src="assets/img/sara.png" alt="Sara" class="avatar-img">
+            <img src="assets/img/sara.jpg" alt="Sara" class="avatar-img">
             <div class="avatar-overlay" id="saraOverlay">SCOPRI</div>
           </div>
           <span class="avatar-label">Sara</span>
         </a>
         <a href="jordan.html" class="avatar-wrap">
           <div class="avatar-frame">
-            <img src="assets/img/jordan.png" alt="Jordan" class="avatar-img">
+            <img src="assets/img/jordan.jpg" alt="Jordan" class="avatar-img">
             <div class="avatar-overlay" id="jordanOverlay">SCOPRI</div>
           </div>
           <span class="avatar-label">Jordan</span>
         </a>
       </div>
 
-      <!-- CTA: apre timeline + viaggi -->
+      <!-- CTA: this open timeline + viaggi -->
       <button class="cta-btn" id="ctaBtn" onclick="toggleTimeline()">
         <span id="ctaText">Clicca qui per più dettagli</span>
         <span class="cta-icon">↓</span>
       </button>
-
-      <p class="hero-footer" id="heroFooter">
-        Creato da Sara per Jordan con tanto amore ©2026
-      </p>
 
     </div>
   </section>
@@ -69,8 +65,9 @@
       <h2 class="tl-heading">
         <span id="tlHeading">La nostra <span class="accent">storia:</span></span>
       </h2>
+         <p class="tl-subheading" id="tlSub">Clicca sulle date per scoprire ogni momento</p>
 
-      <!-- Pallini della timeline -->
+      <!-- pins of timeline -->
       <div class="tl-track-wrap">
         <div class="tl-line"></div>
         <div class="tl-track" id="tlTrack"></div>
@@ -78,10 +75,6 @@
 
       <!-- Card evento attivo -->
       <div class="tl-events" id="tlEvents"></div>
-
-      <p class="tl-footer" id="tlFooter">
-        Creato da Sara per Jordan con tanto amore ©2026
-      </p>
 
     </div>
   </section>
@@ -96,7 +89,7 @@
       Clicca sulla mappa per scoprire i nostri ricordi più belli
     </p>
 
-    <!-- Mappa + pillole laterali -->
+    <!-- Map + tags -->
     <div class="viaggi-main">
       <div class="dest-col left"  id="destLeft"></div>
       <div class="map-wrap" id="mapWrap">
@@ -105,7 +98,7 @@
       <div class="dest-col right" id="destRight"></div>
     </div>
 
-    <!-- Galleria foto destinazione selezionata -->
+    <!-- Photos gallery viaggi -->
     <div class="viaggi-gallery" id="viaggiGallery">
       <h3 class="gallery-dest-title" id="galleryTitle"></h3>
       <div class="gallery-grid" id="galleryGrid"></div>
@@ -113,10 +106,17 @@
 
   </section>
 
-  <!-- ── SCRIPT (ordine importante: lang → timeline → viaggi) ── -->
+  <!-- ── SCRIPT (important: lang → timeline → viaggi) ── -->
   <script src="assets/js/lang.js"></script>
   <script src="assets/js/timeline.js"></script>
   <script src="assets/js/viaggi.js"></script>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <p id="siteFooter">Creato da Sara per Jordan con tanto amore ©2026</p>
+  </footer>
 
 </body>
 </html>

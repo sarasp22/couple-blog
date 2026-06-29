@@ -1,9 +1,3 @@
-/* ══════════════════════════════════════════════
-   TIMELINE.JS — logica e dati della timeline
-   ✏️  Per aggiungere/modificare un evento,
-       edita l'array EVENTS qui sotto.
-   ══════════════════════════════════════════════ */
-
 /* ── DATI EVENTI ─────────────────────────────
    Campi per ogni evento:
    - date       : stringa data visualizzata
@@ -34,7 +28,7 @@ const EVENTS = [
   },
   {
     date: "13/08/2024",
-    title_it: "Primo viaggio",
+    title_it: "Primo "Ti amo"",
     title_fr: "Premier voyage",
     body_it: "Un mese dopo, le valigie erano aperte e i cuori ancora di più. La nostra prima avventura insieme: paesaggi nuovi, sapori nuovi.",
     body_fr: "Un mois plus tard, les valises étaient ouvertes et nos cœurs encore plus. Notre première aventure ensemble : de nouveaux paysages, de nouvelles saveurs.",
@@ -43,7 +37,7 @@ const EVENTS = [
   },
   {
     date: "25/10/2024",
-    title_it: "Sei mesi insieme",
+    title_it: "Prima prova convivenza",
     title_fr: "Six mois ensemble",
     body_it: "Sei mesi di piccoli gesti che si accumulano: il caffè del mattino, i messaggi assurdi alle tre di notte, le cene improvvisate.",
     body_fr: "Six mois de petits gestes qui s'accumulent : le café du matin, les messages absurdes à trois heures du matin, les dîners improvisés.",
@@ -52,7 +46,7 @@ const EVENTS = [
   },
   {
     date: "30/05/2025",
-    title_it: "Un anno insieme",
+    title_it: "Trasloco nella nostra casetta",
     title_fr: "Un an ensemble",
     body_it: "Un anno di noi. Di crescita, di risate, di pianti e di forza condivisa. Di scelte fatte insieme, di un appartamento che è diventato il nostro nido.",
     body_fr: "Un an de nous. De croissance, de rires, de larmes et de force partagée. D'un appartement devenu notre nid.",
@@ -136,11 +130,13 @@ function selectEvent(i, el) {
 }
 
 function toggleTimeline() {
-  const sec = document.getElementById('timeline-section');
-  const btn = document.getElementById('ctaBtn');
-  timelineOpen = !timelineOpen;
+  const sec     = document.getElementById('timeline-section');
+  const viaggi  = document.getElementById('viaggi-section');
+  const btn     = document.getElementById('ctaBtn');
+  timelineOpen  = !timelineOpen;
   sec.classList.toggle('open', timelineOpen);
   btn.classList.toggle('open', timelineOpen);
+  viaggi.style.display = timelineOpen ? 'block' : 'none';
   if (timelineOpen) {
     setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120);
   }
