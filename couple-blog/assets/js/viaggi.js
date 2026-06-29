@@ -16,7 +16,7 @@ const DESTINATIONS = [
         loc: 'Rocamadour',
         desc_it: 'Mare cristallino e spiagge di sabbia bianca da sogno.',
         desc_fr: 'Mer cristalline et plages de sable blanc de rêve.',
-        img: 'assets/img/sardegna.jpg'
+        img: 'assets/img/rocamadour.jpeg'
       },
       {
         loc: 'Costiera Amalfitana',
@@ -28,7 +28,7 @@ const DESTINATIONS = [
         loc: 'Saint-Malo',
         desc_it: 'Il nostro angolo segreto sui Monti Simbruini, lontano da tutto.',
         desc_fr: 'Notre coin secret dans les Monti Simbruini, loin de tout.',
-        img: 'assets/img/affile.jpg'
+        img: 'assets/img/saintmalo.jpg'
       },
     ]
   },
@@ -46,10 +46,10 @@ const DESTINATIONS = [
         img: 'assets/img/copenaghen.jpg'
       },
       {
-        loc: 'Norvegia',
+        loc: 'Slovaer',
         desc_it: 'Lavanda, mercati provenzali e tramonti rosa sul Mediterraneo.',
         desc_fr: 'Lavande, marchés provençaux et couchers de soleil roses sur la Méditerranée.',
-        img: 'assets/img/sudfr.jpg'
+        img: 'assets/img/norvegia.jpg'
       },
     ]
   },
@@ -91,7 +91,7 @@ const DESTINATIONS = [
         loc: 'Istanbul',
         desc_it: 'Pizza, caos e bellezza assoluta. Napoli non si spiega, si vive.',
         desc_fr: 'Pizza, chaos et beauté absolue. Naples ne s\'explique pas, elle se vit.',
-        img: 'assets/img/napoli.jpg'
+        img: 'assets/img/turchia.jpg'
       },
       {
         loc: 'Cappadocia',
