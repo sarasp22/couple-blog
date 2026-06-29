@@ -19,6 +19,12 @@ const DESTINATIONS = [
         img: 'assets/img/rocamadour.jpeg'
       },
       {
+        loc: 'Milano',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
+        img: 'assets/img/milano.jpg'
+      },
+      {
         loc: 'Saint-Malo',
         desc_it: 'Il nostro angolo segreto sui Monti Simbruini, lontano da tutto.',
         desc_fr: 'Notre coin secret dans les Monti Simbruini, loin de tout.',
@@ -35,6 +41,12 @@ const DESTINATIONS = [
         desc_it: 'La strada più bella del mondo, punto.',
         desc_fr: 'La plus belle route du monde, point.',
         img: 'assets/img/vespa.jpg'
+      },
+      {
+        loc: 'Staffal',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
+        img: 'assets/img/staffal.jpg'
       },
       {
         loc: 'Pompei',
