@@ -1,4 +1,10 @@
-/* ── DATI DESTINAZIONS ───────────────────────
+/* ══════════════════════════════════════════════
+   VIAGGI.JS — mappa interattiva e galleria foto
+   ✏️  Per aggiungere/modificare una destinazione,
+       edita l'array DESTINATIONS qui sotto.
+   ══════════════════════════════════════════════ */
+
+/* ── DATI DESTINAZIONI ───────────────────────
    Campi per ogni destinazione:
    - id         : stringa identificativa unica
    - label_it/fr: nome pillola nelle due lingue
@@ -18,7 +24,7 @@ const DESTINATIONS = [
         loc: 'Rocamadour',
         desc_it: 'Il villaggio medievale arroccato sulla roccia, magico all\'imbrunire.',
         desc_fr: 'Le village médiéval perché sur la roche, magique au crépuscule.',
-        img: 'assets/img/rocamadour.jpeg'
+        img: 'assets/img/rocamadour.jpg'
       },
       {
         loc: 'Castelli Loira',
@@ -175,4 +181,4 @@ function renderGallery() {
   setTimeout(() => gallery.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
 }
 
-buildViagggi();
+document.addEventListener("DOMContentLoaded", () => { buildViagggi(); });
