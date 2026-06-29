@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan — Blog di Sara & Jordan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:      #FDFAF7;
+      --rose:       #D4857A;
+      --rose-light: #F2DDD9;
+      --rose-dark:  #B5665A;
+      --sage:       #7A9E7E;
+      --sage-light: #D8EAD9;
+      --carbon:     #1E1E1E;
+      --mid:        #6B6B6B;
+      --line:       #E5DDD8;
+      --white:      #FFFFFF;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--cream);
+      color: var(--carbon);
+      font-family: 'Nunito', sans-serif;
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      background: rgba(253,250,247,0.92);
+      backdrop-filter: blur(8px);
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-back {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--mid);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--carbon); }
+    .nav-back .arrow { font-size: 1rem; }
+
+    .nav-brand {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--carbon);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .nav-brand .amp { color: var(--rose); }
+
+    .lang-btn {
+      background: var(--white);
+      border: 1px solid var(--line);
+      color: var(--carbon);
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .lang-btn:hover { border-color: var(--rose); background: var(--rose-light); }
+
+    /* ── MAIN LAYOUT ── */
+    .profile-wrap {
+      max-width: 900px;
+      margin: 60px auto 80px;
+      padding: 0 40px;
+      display: flex;
+      gap: 56px;
+      align-items: flex-start;
+    }
+
+    /* ── FOTO ── */
+    .profile-photo {
+      flex: 0 0 300px;
+    }
+    .photo-frame {
+      width: 300px;
+      border-radius: 32px;
+      overflow: hidden;
+      border: 3px solid var(--sage-light);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.09);
+    }
+    .photo-frame img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+      background: var(--sage-light);
+    }
+
+    /* ── TESTO ── */
+    .profile-info {
+      flex: 1;
+      padding-top: 8px;
+    }
+
+    .profile-name {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--carbon);
+      margin-bottom: 20px;
+    }
+
+    .profile-bio {
+      font-size: 0.9rem;
+      line-height: 1.85;
+      color: var(--mid);
+      margin-bottom: 28px;
+    }
+
+    /* data nascita */
+    .profile-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      color: var(--carbon);
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+    .meta-icon { font-size: 1rem; }
+
+    /* passioni */
+    .passions-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+      margin-bottom: 12px;
+    }
+    .passions-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .passion-pill {
+      background: var(--sage-light);
+      color: var(--sage);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(122,158,126,0.3);
+    }
+
+    /* ── FOOTER ── */
+    .page-footer {
+      text-align: center;
+      font-size: 0.72rem;
+      color: #bbb;
+      letter-spacing: 0.05em;
+      padding: 32px 24px 48px;
+      border-top: 1px solid var(--line);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .profile-wrap { flex-direction: column; gap: 32px; padding: 0 20px; margin-top: 40px; }
+      .profile-photo, .photo-frame { width: 100%; flex: unset; }
+      .nav { padding: 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-back"><span class="arrow">←</span> <span id="backLabel">Torna alla home</span></a>
+  <a href="index.html" class="nav-brand">Sara <span class="amp">&</span> Jordan</a>
+  <button class="lang-btn" id="langBtn" onclick="toggleLang()">🇫🇷 FR</button>
+</nav>
+
+<div class="profile-wrap">
+
+  <!-- FOTO -->
+  <div class="profile-photo">
+    <div class="photo-frame">
+      <img src="assets/img/jordan.png" alt="Jordan">
+    </div>
+  </div>
+
+  <!-- INFO -->
+  <div class="profile-info">
+    <h1 class="profile-name">Jordan</h1>
+
+    <p class="profile-bio" id="bio">
+      Sono Jordan, nato e cresciuto a Parigi tra caffè e baguette. Amo esplorare angoli nascosti delle città, fotografare l'ordinario e trovarlo straordinario. Ho incontrato Sara quasi per caso — o forse no, forse è stato l'universo a decidere. Da quel giorno il mondo ha preso un colore diverso.
+    </p>
+
+    <div class="profile-meta">
+      <span class="meta-icon">🎂</span>
+      <span id="birthLabel">Nato a Parigi il 06/03/1993</span>
+    </div>
+
+    <p class="passions-label" id="passionsLabel">PASSIONI</p>
+    <div class="passions-wrap" id="passionsWrap"></div>
+  </div>
+
+</div>
+
+<footer class="page-footer" id="footerText">
+  Creato da Sara per Jordan con tanto amore ©2026
+</footer>
+
+<script>
+let lang = 'it';
+
+const passions = {
+  it: ['📷 Fotografia', '🚴 Ciclismo', '🍕 Cucina', '✈️ Viaggi', '🎵 Musica', '📚 Lettura'],
+  fr: ['📷 Photographie', '🚴 Cyclisme', '🍕 Cuisine', '✈️ Voyages', '🎵 Musique', '📚 Lecture']
+};
+
+const strings = {
+  backLabel:     { it: 'Torna alla home',                               fr: 'Retour à l\'accueil' },
+  bio:           { it: 'Sono Jordan, nato e cresciuto a Parigi tra caffè e baguette. Amo esplorare angoli nascosti delle città, fotografare l\'ordinario e trovarlo straordinario. Ho incontrato Sara quasi per caso — o forse no, forse è stato l\'universo a decidere. Da quel giorno il mondo ha preso un colore diverso.',
+                   fr: 'Je suis Jordan, né et grandi à Paris entre cafés et baguettes. J\'aime explorer les coins cachés des villes, photographier l\'ordinaire et le trouver extraordinaire. J\'ai rencontré Sara presque par hasard — ou peut-être pas, peut-être que c\'était l\'univers qui décidait. Depuis ce jour, le monde a pris une couleur différente.' },
+  birthLabel:    { it: 'Nato a Parigi il 06/03/1993',                   fr: 'Né à Paris le 06/03/1993' },
+  passionsLabel: { it: 'PASSIONI',                                       fr: 'PASSIONS' },
+  footerText:    { it: 'Creato da Sara per Jordan con tanto amore ©2026', fr: 'Créé par Sara pour Jordan avec beaucoup d\'amour ©2026' },
+};
+
+function renderPassions() {
+  const wrap = document.getElementById('passionsWrap');
+  wrap.innerHTML = '';
+  passions[lang].forEach(p => {
+    const pill = document.createElement('span');
+    pill.className = 'passion-pill';
+    pill.textContent = p;
+    wrap.appendChild(pill);
+  });
+}
+
+function toggleLang() {
+  lang = lang === 'it' ? 'fr' : 'it';
+  document.getElementById('langBtn').textContent = lang === 'it' ? '🇫🇷 FR' : '🇮🇹 IT';
+  Object.entries(strings).forEach(([id, vals]) => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = vals[lang];
+  });
+  renderPassions();
+}
+
+renderPassions();
+</script>
+</body>
+</html>

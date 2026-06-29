@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog di Sara & Jordan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="stylesheet" href="assets/css/viaggi.css">
+</head>
+<body>
+
+  <!-- ── BOTTONE LINGUA ── -->
+  <button class="lang-btn" id="langBtn" onclick="toggleLang()">🇫🇷 FR</button>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-card">
+
+      <h1 class="hero-title">
+        <span id="heroTitle">Benvenuti nel Blog di<br>Sara <span class="amp">&</span> Jordan</span>
+      </h1>
+
+      <p class="hero-subtitle" id="heroSub">
+        Clicca su Sara o Jordan per conoscerci meglio
+      </p>
+
+      <!-- Avatars cliccabili -->
+      <div class="avatars">
+        <a href="sara.html" class="avatar-wrap">
+          <div class="avatar-frame">
+            <img src="assets/img/sara.png" alt="Sara" class="avatar-img">
+            <div class="avatar-overlay" id="saraOverlay">SCOPRI</div>
+          </div>
+          <span class="avatar-label">Sara</span>
+        </a>
+        <a href="jordan.html" class="avatar-wrap">
+          <div class="avatar-frame">
+            <img src="assets/img/jordan.png" alt="Jordan" class="avatar-img">
+            <div class="avatar-overlay" id="jordanOverlay">SCOPRI</div>
+          </div>
+          <span class="avatar-label">Jordan</span>
+        </a>
+      </div>
+
+      <!-- CTA: apre timeline + viaggi -->
+      <button class="cta-btn" id="ctaBtn" onclick="toggleTimeline()">
+        <span id="ctaText">Clicca qui per più dettagli</span>
+        <span class="cta-icon">↓</span>
+      </button>
+
+      <p class="hero-footer" id="heroFooter">
+        Creato da Sara per Jordan con tanto amore ©2026
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TIMELINE
+  ══════════════════════════════════════ -->
+  <section id="timeline-section">
+    <div class="timeline-inner">
+
+      <h2 class="tl-heading">
+        <span id="tlHeading">La nostra <span class="accent">storia:</span></span>
+      </h2>
+
+      <!-- Pallini della timeline -->
+      <div class="tl-track-wrap">
+        <div class="tl-line"></div>
+        <div class="tl-track" id="tlTrack"></div>
+      </div>
+
+      <!-- Card evento attivo -->
+      <div class="tl-events" id="tlEvents"></div>
+
+      <p class="tl-footer" id="tlFooter">
+        Creato da Sara per Jordan con tanto amore ©2026
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       VIAGGI
+  ══════════════════════════════════════ -->
+  <section id="viaggi-section">
+
+    <h2 class="viaggi-heading" id="viaggiHeading">I nostri viaggi insieme:</h2>
+    <p class="viaggi-subheading" id="viaggiSub">
+      Clicca sulla mappa per scoprire i nostri ricordi più belli
+    </p>
+
+    <!-- Mappa + pillole laterali -->
+    <div class="viaggi-main">
+      <div class="dest-col left"  id="destLeft"></div>
+      <div class="map-wrap" id="mapWrap">
+        <img src="assets/img/mappa.jpg" alt="Mappa dei nostri viaggi" class="map-img">
+      </div>
+      <div class="dest-col right" id="destRight"></div>
+    </div>
+
+    <!-- Galleria foto destinazione selezionata -->
+    <div class="viaggi-gallery" id="viaggiGallery">
+      <h3 class="gallery-dest-title" id="galleryTitle"></h3>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+
+  </section>
+
+  <!-- ── SCRIPT (ordine importante: lang → timeline → viaggi) ── -->
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/timeline.js"></script>
+  <script src="assets/js/viaggi.js"></script>
+
+</body>
+</html>
