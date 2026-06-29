@@ -43,16 +43,16 @@ const DESTINATIONS = [
         img: 'assets/img/granito.jpg'
       },
       {
-        loc: 'Costiera Amalfitana',
-        desc_it: 'La strada più bella del mondo, punto.',
-        desc_fr: 'La plus belle route du monde, point.',
-        img: 'assets/img/vespa.jpg'
-      },
-      {
         loc: 'Staffal',
         desc_it: 'La strada più bella del mondo, punto.',
         desc_fr: 'La plus belle route du monde, point.',
         img: 'assets/img/staffal.jpg'
+      },
+      {
+        loc: 'Costiera Amalfitana',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
+        img: 'assets/img/vespa.jpg'
       },
       {
         loc: 'Pompei',
