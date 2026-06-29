@@ -19,10 +19,16 @@ const DESTINATIONS = [
         img: 'assets/img/rocamadour.jpeg'
       },
       {
-        loc: 'Costiera Amalfitana',
+        loc: 'Milano',
         desc_it: 'La strada più bella del mondo, punto.',
         desc_fr: 'La plus belle route du monde, point.',
-        img: 'assets/img/vespa.jpg'
+        img: 'assets/img/milano.jpg'
+      },
+      {
+        loc: 'Affile',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
+        img: 'assets/img/affile.jpg'
       },
       {
         loc: 'Saint-Malo',
@@ -37,10 +43,22 @@ const DESTINATIONS = [
         img: 'assets/img/granito.jpg'
       },
       {
+        loc: 'Costiera Amalfitana',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
+        img: 'assets/img/vespa.jpg'
+      },
+      {
         loc: 'Staffal',
-        desc_it: 'Il nostro angolo segreto sui Monti Simbruini, lontano da tutto.',
-        desc_fr: 'Notre coin secret dans les Monti Simbruini, loin de tout.',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
         img: 'assets/img/staffal.jpg'
+      },
+      {
+        loc: 'Pompei',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
+        img: 'assets/img/pompei.jpg'
       },
     ]
   },
@@ -77,12 +95,6 @@ const DESTINATIONS = [
         desc_it: 'Aperitivi in Navigli, la Madonnina e mille posti nuovi da scoprire.',
         desc_fr: 'Apéros aux Navigli, la Madonnina et mille nouveaux endroits à découvrir.',
         img: 'assets/img/salento.jpg'
-      },
-      {
-        loc: 'Ecuador',
-        desc_it: 'Cinque paesi colorati abbarbicati sulle scogliere liguri.',
-        desc_fr: 'Cinq villages colorés accrochés aux falaises liguriennes.',
-        img: 'assets/img/mitad.jpg'
       },
       {
         loc: 'Galapagos',
