@@ -25,6 +25,12 @@ const DESTINATIONS = [
         img: 'assets/img/milano.jpg'
       },
       {
+        loc: 'Affile',
+        desc_it: 'La strada più bella del mondo, punto.',
+        desc_fr: 'La plus belle route du monde, point.',
+        img: 'assets/img/affile.jpg'
+      },
+      {
         loc: 'Saint-Malo',
         desc_it: 'Il nostro angolo segreto sui Monti Simbruini, lontano da tutto.',
         desc_fr: 'Notre coin secret dans les Monti Simbruini, loin de tout.',
