@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── BOTTONE LINGUA (fisso in alto a destra) ── */
+/* ── BOTTONE LINGUA  ── */
 .lang-btn {
   position: fixed;
   top: 22px;
@@ -48,7 +48,7 @@ body {
   background: var(--rose-light);
 }
 
-/* ── FOOTER GLOBALE (una sola volta in fondo) ── */
+/* ── FOOTER GLOBALE  ── */
 .site-footer {
   text-align: center;
   padding: 32px 24px 48px;

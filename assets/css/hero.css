@@ -152,7 +152,7 @@
   .avatar-frame { width: 130px; height: 162px; }
 }
 
-/* ── RESPONSIVE LAPTOP (Basato anche sull'altezza per evitare lo scroll) ── */
+/* ── RESPONSIVE LAPTOP ── */
 @media (max-height: 850px), (max-width: 1440px) {
   .hero {
     /* Riduciamo drasticamente lo spazio bianco sopra la card */

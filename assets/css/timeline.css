@@ -133,7 +133,7 @@
 /* casa bottom */
 .ev-img-btn {
   position: absolute;
-  bottom: 18px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   border-style:groove;
