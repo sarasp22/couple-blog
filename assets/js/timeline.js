@@ -19,8 +19,8 @@ const EVENTS = [
   },
   {
     date: "13/08/2024",
-    title_it: "Primo 'Ti amo'",
-    title_fr: "Premier 'Je t'aime'",
+    title_it: "Primo “Ti amo”",
+    title_fr: "Premier “Je t'aime”",
     body_it: "Nelle settimane successive al nostro primo bacio abbiamo continuato a vederci e sentirci ogni giorno. Così, quando ho detto a Jo che sarei tornata a Napoli per un paio di settimane, lui si è proposto di venire a passare un weekend, per rendere quella distanza un po’ più leggera. Durante quella separazione temporanea ci siamo chiamati tutti i giorni, a volte per ore, conoscendoci sempre di più e condividendo pensieri, ricordi e parti sempre più profonde di noi. Dopo un mese dal nostro primo bacio, lui era lì, nella mia città. Abbiamo passato quel weekend in un B&B stupendo, tra le isole di Napoli e qualche giro in città. I ricordi belli sono tanti, ma uno in particolare resta più vivo degli altri: la giornata a Capri, il modo in cui mi ha guardata con quegli occhi pieni di qualcosa di nuovo, di intenso. E poi, tornati nella nostra stanza, sono arrivate quelle parole: “ti amo”. Emozioni forti, quasi tangibili, come se si potessero percepire anche dall’esterno.",
     body_fr: "Dans les semaines qui ont suivi notre premier baiser, nous avons continué à nous voir et à nous parler tous les jours. Ainsi, lorsque j’ai dit à Jo que je rentrerais à Naples pour quelques semaines, il s’est proposé de venir passer un week-end, pour rendre cette distance un peu plus légère. Pendant cette séparation temporaire, nous nous sommes appelés tous les jours, parfois pendant des heures, apprenant à mieux nous connaître et partageant pensées, souvenirs et parts de plus en plus profondes de nous-mêmes. Un mois après notre premier baiser, il était là, dans ma ville. Nous avons passé ce week-end dans un magnifique B&B, entre les îles de Naples et quelques balades en ville. Les beaux souvenirs sont nombreux, mais l’un d’eux reste plus vif que les autres : cette journée à Capri, la façon dont il m’a regardée avec des yeux remplis de quelque chose de nouveau, d’intense. Et puis, de retour dans notre chambre, ces mots sont arrivés : « je t’aime ». Des émotions fortes, presque tangibles, comme si elles pouvaient se percevoir de l’extérieur.",
     img: "assets/img/event-3.jpg",
@@ -37,10 +37,10 @@ const EVENTS = [
   },
   {
     date: "30/05/2025",
-    title_it: "Un anno insieme",
-    title_fr: "Un an ensemble",
-    body_it: "Un anno di noi. Di crescita, di risate, di pianti e di forza condivisa. Di scelte fatte insieme, di un appartamento che è diventato il nostro nido.",
-    body_fr: "Un an de nous. De croissance, de rires, de larmes et de force partagée. D'un appartement devenu notre nid.",
+    title_it: "Primo appartamento “nostro”",
+    title_fr: "Premier appartement “à nous”",
+    body_it: "La prova di convivenza è andata molto meglio di quanto avessimo immaginato. Così abbiamo deciso di cercare una piccola casa in affitto che potessimo arredare e sentire davvero nostra. La ricerca non è stata semplice, ma alla fine abbiamo trovato un appartamento che, pur non convincendoci del tutto all’inizio, aveva un enorme potenziale. Il trasloco è stato rapidissimo: Jordan è la persona più veloce che conosca sotto tanti aspetti. Nel giro di poco tempo eravamo già installati. Da allora, adoriamo il nostro piccolo rifugio d’amore.",
+    body_fr: "L’essai de vie commune s’est passé bien mieux que nous l’avions imaginé. Nous avons alors décidé de chercher un petit appartement en location que nous pourrions aménager et vraiment sentir comme le nôtre. La recherche n’a pas été simple, mais nous avons fini par trouver un appartement qui, même s’il ne nous avait pas totalement convaincus au départ, avait un énorme potentiel. Le déménagement a été très rapide : Jordan est la personne la plus rapide que je connaisse à bien des égards. En peu de temps, nous étions déjà installés. Depuis, nous adorons notre petit refuge d’amour.",
     img: "assets/img/event-5.jpg",
     imgBtn: {
       label_it: "Per entrare in casa clicca qui",
