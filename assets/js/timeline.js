@@ -1,18 +1,3 @@
-/* ══════════════════════════════════════════════
-   TIMELINE.JS — logica e dati della timeline
-   ✏️  Per aggiungere/modificare un evento,
-       edita l'array EVENTS qui sotto.
-   ══════════════════════════════════════════════ */
-
-/* ── DATI EVENTI ─────────────────────────────
-   Campi per ogni evento:
-   - date       : stringa data visualizzata
-   - title_it/fr: titolo nelle due lingue
-   - body_it/fr : testo nelle due lingue
-   - img        : percorso immagine (null = placeholder emoji)
-   - imgBtn     : null oppure { label_it, label_fr, href }
-                  → mostra un bottone sovrapposto alla foto
-   ──────────────────────────────────────────── */
 const EVENTS = [
   {
     date: "11/07/2024",

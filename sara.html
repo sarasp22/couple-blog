@@ -89,7 +89,7 @@
       align-items: flex-start;
     }
 
-    /* ── FOTO ── */
+    /* ── photo ── */
     .profile-photo {
       flex: 0 0 300px;
     }
@@ -257,7 +257,6 @@ function toggleLang() {
   renderPassions();
 }
 
-/* applica la lingua salvata al caricamento */
 document.getElementById('langBtn').textContent = lang === 'it' ? '🇫🇷 FR' : '🇮🇹 IT';
 Object.entries(strings).forEach(([id, vals]) => {
   const el = document.getElementById(id);
