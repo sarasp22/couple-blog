@@ -203,7 +203,8 @@
 </footer>
 
 <script>
-let lang = 'it';
+let lang = localStorage.getItem('siteLang') || 'it';
+
 const strings = {
   backLabel:  { it: 'Torna alla home',                                  fr: 'Retour à l\'accueil' },
   pageTitle:  { it: 'Benvenuti nella nostra casetta',                   fr: 'Bienvenue dans notre petit chez-nous' },
@@ -222,12 +223,20 @@ const strings = {
 
 function toggleLang() {
   lang = lang === 'it' ? 'fr' : 'it';
+  localStorage.setItem('siteLang', lang);
   document.getElementById('langBtn').textContent = lang === 'it' ? '🇫🇷 FR' : '🇮🇹 IT';
   Object.entries(strings).forEach(([id, vals]) => {
     const el = document.getElementById(id);
     if (el) el.innerHTML = vals[lang];
   });
 }
+
+/* applica la lingua salvata al caricamento */
+document.getElementById('langBtn').textContent = lang === 'it' ? '🇫🇷 FR' : '🇮🇹 IT';
+Object.entries(strings).forEach(([id, vals]) => {
+  const el = document.getElementById(id);
+  if (el) el.innerHTML = vals[lang];
+});
 </script>
 </body>
 </html>

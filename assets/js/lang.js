@@ -28,8 +28,6 @@ const uiStrings = {
     it: "Clicca sulle date per scoprire ogni momento",
     fr: "Clique sur les dates pour découvrir chaque moment"
   },
-  saraOverlay:   { it: "SCOPRI", fr: "DÉCOUVRIR" },
-  jordanOverlay: { it: "SCOPRI", fr: "DÉCOUVRIR" },
   viaggiHeading: { it: "I nostri viaggi insieme:", fr: "Nos voyages ensemble :" },
   viaggiSub:     {
     it: "Clicca sulla mappa per scoprire i nostri ricordi più belli",
