@@ -10,7 +10,7 @@
   opacity: 1;
 }
 
-.timeline-inner { padding: 72px 40px 100px; }
+.timeline-inner { padding-top: 72px }
 
 /* ── TITOLO ── */
 .tl-heading {
@@ -38,7 +38,6 @@
   margin: 0 auto;
 }
 
-/* linea orizzontale */
 .tl-line {
   position: absolute;
   top: 7px;
@@ -99,7 +98,6 @@
 .tl-event { display: none; animation: fadeUp 0.4s ease; }
 .tl-event.active { display: flex; gap: 44px; align-items: center; }
 
-/* layout alternato: dispari foto sx, pari foto dx */
 .tl-event.photo-right { flex-direction: row-reverse; }
 
 /* ── FOTO ── */
@@ -138,13 +136,14 @@
   bottom: 18px;
   left: 50%;
   transform: translateX(-50%);
+  border-style:groove;
   background: rgba(255,255,255,0.93);
+  border-color: var(--rose-dark);
   color: var(--carbon);
   font-family: 'Nunito', sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  border: none;
   border-radius: 999px;
   padding: 9px 20px;
   cursor: pointer;
@@ -200,8 +199,8 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 640px) {
-  .timeline-inner { padding: 48px 20px 80px; }
+  .timeline-inner { padding: 30px }
   .tl-event.active { flex-direction: column !important; }
   .ev-photo { width: 100%; flex: unset; }
-  .ev-img, .ev-img-placeholder { width: 100%; height: 220px; }
+  .ev-img, .ev-img-placeholder { width: 100%; height: 400px; }
 }

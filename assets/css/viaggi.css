@@ -157,7 +157,7 @@
   .dest-col { flex-direction: row; flex-wrap: wrap; justify-content: center; }
   .dest-col.left { align-items: center; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  #viaggi-section { padding: 48px 20px 80px; }
+  #viaggi-section { padding-top: 30px }
 }
 @media (max-width: 480px) {
   .gallery-grid { grid-template-columns: 1fr; }
