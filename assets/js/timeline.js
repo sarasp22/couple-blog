@@ -52,9 +52,9 @@ const EVENTS = [
     date: "?",
     title_it: "Capitolo futuro",
     title_fr: "Chapitre futur",
-    body_it: "La storia continua… non vediamo l'ora di scoprire cosa ci riserva il prossimo capitolo.",
-    body_fr: "L'histoire continue… nous avons hâte de découvrir ce que le prochain chapitre nous réserve.",
-    img: null,
+    body_it: "La nostra storia continua, e chissà dove ci porterà. Speriamo entrambi in tante belle novità, e in tutto quello che ancora non conosciamo ma che siamo pronti a scoprire insieme.",
+    body_fr: "Notre histoire continue, et qui sait où elle nous mènera. Nous espérons tous les deux de belles nouveautés, et tout ce que nous ne connaissons pas encore mais que nous sommes prêts à découvrir ensemble.",
+    img: "assets/img/event.jpg",
     imgBtn: null
   }
 ];
