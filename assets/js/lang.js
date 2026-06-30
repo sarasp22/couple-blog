@@ -1,9 +1,10 @@
 /* ══════════════════════════════════════════════
-   LANG.JS — sistema bilingue IT/FR
+   LANG.JS — sistema bilingue IT/FR con persistenza
    Modifica qui tutte le stringhe dell'interfaccia
    ══════════════════════════════════════════════ */
 
-let lang = 'it';
+/* Legge la lingua salvata in precedenza, default 'it' */
+let lang = localStorage.getItem('siteLang') || 'it';
 
 /* Stringhe statiche della home (id elemento → testo IT/FR) */
 const uiStrings = {
@@ -45,14 +46,19 @@ function applyLang() {
     const el = document.getElementById(id);
     if (el) el.innerHTML = vals[lang];
   });
+  const btn = document.getElementById('langBtn');
+  if (btn) btn.textContent = lang === 'it' ? '🇫🇷 FR' : '🇮🇹 IT';
 }
 
 function toggleLang() {
   lang = lang === 'it' ? 'fr' : 'it';
-  document.getElementById('langBtn').textContent = lang === 'it' ? '🇫🇷 FR' : '🇮🇹 IT';
+  localStorage.setItem('siteLang', lang); /* salva la scelta per le altre pagine */
   applyLang();
 
   /* aggiorna sezioni dinamiche se presenti */
   if (typeof buildEvents  === 'function') { buildEvents(); if (activeIdx  !== null) document.getElementById(`ev-${activeIdx}`).classList.add('active'); }
   if (typeof buildViagggi === 'function') { buildViagggi(); if (activeDest) renderGallery(); }
 }
+
+/* applica subito la lingua salvata al caricamento della pagina */
+document.addEventListener('DOMContentLoaded', applyLang);

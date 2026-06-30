@@ -222,7 +222,7 @@
 </footer>
 
 <script>
-let lang = 'it';
+let lang = localStorage.getItem('siteLang') || 'it';
 
 const passions = {
   it: ['📷 Fotografia', '🚴 Ciclismo', '🍕 Cucina', '✈️ Viaggi', '🎵 Musica', '📚 Lettura'],
@@ -251,6 +251,7 @@ function renderPassions() {
 
 function toggleLang() {
   lang = lang === 'it' ? 'fr' : 'it';
+  localStorage.setItem('siteLang', lang);
   document.getElementById('langBtn').textContent = lang === 'it' ? '🇫🇷 FR' : '🇮🇹 IT';
   Object.entries(strings).forEach(([id, vals]) => {
     const el = document.getElementById(id);
@@ -259,6 +260,12 @@ function toggleLang() {
   renderPassions();
 }
 
+/* applica la lingua salvata al caricamento */
+document.getElementById('langBtn').textContent = lang === 'it' ? '🇫🇷 FR' : '🇮🇹 IT';
+Object.entries(strings).forEach(([id, vals]) => {
+  const el = document.getElementById(id);
+  if (el) el.innerHTML = vals[lang];
+});
 renderPassions();
 </script>
 </body>
