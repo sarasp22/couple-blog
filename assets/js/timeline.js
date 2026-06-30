@@ -19,19 +19,19 @@ const EVENTS = [
   },
   {
     date: "13/08/2024",
-    title_it: "Primo viaggio",
-    title_fr: "Premier voyage",
-    body_it: "Un mese dopo, le valigie erano aperte e i cuori ancora di più. La nostra prima avventura insieme: paesaggi nuovi, sapori nuovi.",
-    body_fr: "Un mois plus tard, les valises étaient ouvertes et nos cœurs encore plus. Notre première aventure ensemble : de nouveaux paysages, de nouvelles saveurs.",
+    title_it: "Primo 'Ti amo'",
+    title_fr: "Premier 'Je t'aime'",
+    body_it: "Nelle settimane successive al nostro primo bacio abbiamo continuato a vederci e sentirci ogni giorno. Così, quando ho detto a Jo che sarei tornata a Napoli per un paio di settimane, lui si è proposto di venire a passare un weekend, per rendere quella distanza un po’ più leggera. Durante quella separazione temporanea ci siamo chiamati tutti i giorni, a volte per ore, conoscendoci sempre di più e condividendo pensieri, ricordi e parti sempre più profonde di noi. Dopo un mese dal nostro primo bacio, lui era lì, nella mia città. Abbiamo passato quel weekend in un B&B stupendo, tra le isole di Napoli e qualche giro in città. I ricordi belli sono tanti, ma uno in particolare resta più vivo degli altri: la giornata a Capri, il modo in cui mi ha guardata con quegli occhi pieni di qualcosa di nuovo, di intenso. E poi, tornati nella nostra stanza, sono arrivate quelle parole: “ti amo”. Emozioni forti, quasi tangibili, come se si potessero percepire anche dall’esterno.",
+    body_fr: "Dans les semaines qui ont suivi notre premier baiser, nous avons continué à nous voir et à nous parler tous les jours. Ainsi, lorsque j’ai dit à Jo que je rentrerais à Naples pour quelques semaines, il s’est proposé de venir passer un week-end, pour rendre cette distance un peu plus légère. Pendant cette séparation temporaire, nous nous sommes appelés tous les jours, parfois pendant des heures, apprenant à mieux nous connaître et partageant pensées, souvenirs et parts de plus en plus profondes de nous-mêmes. Un mois après notre premier baiser, il était là, dans ma ville. Nous avons passé ce week-end dans un magnifique B&B, entre les îles de Naples et quelques balades en ville. Les beaux souvenirs sont nombreux, mais l’un d’eux reste plus vif que les autres : cette journée à Capri, la façon dont il m’a regardée avec des yeux remplis de quelque chose de nouveau, d’intense. Et puis, de retour dans notre chambre, ces mots sont arrivés : « je t’aime ». Des émotions fortes, presque tangibles, comme si elles pouvaient se percevoir de l’extérieur.",
     img: "assets/img/event-3.jpg",
     imgBtn: null
   },
   {
     date: "25/10/2024",
-    title_it: "Sei mesi insieme",
-    title_fr: "Six mois ensemble",
-    body_it: "Sei mesi di piccoli gesti che si accumulano: il caffè del mattino, i messaggi assurdi alle tre di notte, le cene improvvisate.",
-    body_fr: "Six mois de petits gestes qui s'accumulent : le café du matin, les messages absurdes à trois heures du matin, les dîners improvisés.",
+    title_it: "Prova convivenza",
+    title_fr: "Essai de vie commune",
+    body_it: "E così, dopo poco tempo, lui mi ha chiesto di andare a vivere insieme. Ero emozionata, ma anche profondamente spaventata. Ero abituata a stare da sola, ai miei spazi, alle mie abitudini. E lui era arrivato così, in modo inatteso, stravolgendo la mia vita in maniera così positiva che, a tratti, mi sembrava tutto troppo bello per essere vero. Non me la sono sentita di accettare subito. Mi sembrava troppo presto, forse per cultura, forse per le esperienze passate e le piccole ferite che mi portavo dietro. Così abbiamo deciso di fare una prima “prova di convivenza”. Per il resto… niente spoiler su come è andata.",
+    body_fr: "Et puis, assez rapidement, il m’a proposé d’emménager ensemble. J’étais à la fois émue et profondément effrayée. J’étais habituée à vivre seule, à mes espaces, à mes habitudes. Et lui était arrivé comme ça, de manière inattendue, bouleversant ma vie de façon tellement positive que, par moments, tout me semblait trop beau pour être vrai. Je ne me suis pas sentie prête à accepter tout de suite. Cela me semblait trop tôt, peut-être par culture, peut-être à cause des expériences passées et des petites blessures que je portais encore en moi. Alors nous avons décidé de faire un premier “essai de vie commune”. Pour la suite… pas de spoiler sur la façon dont ça s’est passé.",
     img: "assets/img/event-4.jpg",
     imgBtn: null
   },
