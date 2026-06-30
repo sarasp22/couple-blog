@@ -12,8 +12,8 @@ const EVENTS = [
     date: "13/07/2024",
     title_it: "Primo bacio",
     title_fr: "Premier baiser",
-    body_it: "Due giorni dopo, ci siamo ritrovati quasi per caso in un piccolo parco. Camminando lentamente, ridendo di niente, è arrivato il momento più naturale del mondo.",
-    body_fr: "Deux jours après, on s'est retrouvés presque par hasard dans un petit parc. En marchant lentement, en riant de rien, est venu le moment le plus naturel du monde.",
+    body_it: "Per il nostro secondo appuntamento ho deciso che volevo giocare a bocce, perché non ci avevo mai giocato. Ci siamo incontrati al centro commerciale e, dopo aver comprato tutto il necessario, ci siamo diretti verso i campi di pétanque sul boulevard Richard-Lenoir. Dopo qualche indicazione, ti sei avvicinato a me con naturalezza e mi hai baciata. È stato un momento inaspettato, era da tempo che non mi sentivo così. In quel momento stava iniziando qualcosa di speciale, una storia che non avrei mai immaginato potesse nascere così, e soprattutto così velocemente.",
+    body_fr: "Pour notre deuxième rendez-vous, j’ai décidé que je voulais jouer à la pétanque, parce que je n’y avais jamais joué auparavant. Nous nous sommes retrouvés dans un centre commercial et, après avoir acheté tout le nécessaire, nous sommes allés vers les terrains de pétanque du boulevard Richard-Lenoir. Après quelques indications, tu t’es rapproché de moi naturellement et tu m’as embrassée. C’était inattendu, cela faisait longtemps que je ne m’étais pas sentie comme ça. À cet instant, quelque chose de spécial était en train de commencer, une histoire que je n’aurais jamais imaginé voir naître ainsi, et surtout aussi rapidement.",
     img: "assets/img/event-2.jpg",
     imgBtn: null
   },
