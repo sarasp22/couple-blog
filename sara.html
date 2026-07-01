@@ -78,13 +78,13 @@
     }
     .lang-btn:hover { border-color: var(--rose); background: var(--rose-light); }
 
-    /* ── MAIN LAYOUT ── foto a destra per Sara ── */
+    /* ── MAIN LAYOUT ── */
     .profile-wrap {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 60px auto 80px;
       padding: 0 40px;
       display: flex;
-      flex-direction: row-reverse; /* foto a destra */
+      flex-direction: row-reverse;
       gap: 56px;
       align-items: flex-start;
     }
@@ -94,7 +94,7 @@
       flex: 0 0 300px;
     }
     .photo-frame {
-      width: 300px;
+      width: 500px;
       border-radius: 32px;
       overflow: hidden;
       border: 3px solid var(--rose-light);
@@ -115,17 +115,17 @@
     }
 
     .profile-name {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 700;
       color: var(--carbon);
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .profile-bio {
-      font-size: 0.9rem;
-      line-height: 1.85;
+      font-size: 0.8rem;
+      line-height: 1.75;
       color: var(--mid);
-      margin-bottom: 28px;
+      margin-bottom: 25px;
     }
 
     .profile-meta {
@@ -200,12 +200,19 @@
     <h1 class="profile-name">Sara</h1>
 
     <p class="profile-bio" id="bio">
-      Sono Sara, e questo blog l'ho creato io — con amore, un po' di pazzia e tanta voglia di ricordare. Sono cresciuta tra l'Italia e la Francia, con la testa sempre tra le nuvole e il cuore sempre in movimento. Ho incontrato Jordan in un pomeriggio qualunque, e da quel giorno niente è stato più lo stesso.
+      Sono Sara, sono italiana e vivo a Parigi dal 2020. Appassionata di culture diverse e di lingue,
+      ho iniziato il mio percorso universitario studiando cultura inglese e spagnola, e poi, per quei giri un po’ imprevedibili che prende la vita, mi sono ritrovata
+      a parlare francese e portoghese. Ed è proprio questa passione per le lingue che, alla fine, mi ha fatto incontrare Jo.
+      Ho mille interessi, che coltivo a fasi alterne: posso essere una viaggiatrice avventurosa, sempre pronta a partire, oppure trasformarmi in una nonnina
+      felice con i suoi lavori all’uncinetto. Adoro gli animali e mi piace leggere di psicologia, diritti umani e femminismo: temi su cui è facilissimo
+      coinvolgermi in una discussione. Mi definirei una persona comprensiva, paziente e calma. Non sono molto festaiola, ma ho una passione assoluta per la pizza.
+      Cresciuta in una famiglia di informatici, ho sempre avuto una naturale dimestichezza con la tecnologia: sono curiosa, veloce e mi piace capire come funzionano le cose, infatti
+      eccomi qui a creare questo Blog per Jordan dopo aver svolto il mio bootcamp di development web!
     </p>
 
     <div class="profile-meta">
       <span>🎂</span>
-      <span id="birthLabel">Nata a Parigi il 06/03/1993</span>
+      <span id="birthLabel">Nata a Napoli il 02/09/1995</span>
     </div>
 
     <p class="passions-label" id="passionsLabel">PASSIONI</p>
@@ -222,15 +229,15 @@
 let lang = localStorage.getItem('siteLang') || 'it';
 
 const passions = {
-  it: ['🎨 Arte', '✈️ Viaggi', '📖 Letteratura', '🌿 Natura', '🎬 Cinema', '🍰 Pasticceria'],
-  fr: ['🎨 Art', '✈️ Voyages', '📖 Littérature', '🌿 Nature', '🎬 Cinéma', '🍰 Pâtisserie']
+  it: ['🧠 Psicologia', '✈️ Viaggi', '🌍 Lingue', '🌿 Natura', '🧶 Uncinetto', '💻 Tech'],
+  fr : ['🧠 Psychologie', '✈️ Voyages', '🌍 Langues', '🌿 Nature', '🧶 Crochet', '💻 Tech']
 };
 
 const strings = {
   backLabel:     { it: 'Torna alla home',                                fr: 'Retour à l\'accueil' },
-  bio:           { it: 'Sono Sara, e questo blog l\'ho creato io — con amore, un po\' di pazzia e tanta voglia di ricordare. Sono cresciuta tra l\'Italia e la Francia, con la testa sempre tra le nuvole e il cuore sempre in movimento. Ho incontrato Jordan in un pomeriggio qualunque, e da quel giorno niente è stato più lo stesso.',
-                   fr: 'Je suis Sara, et ce blog, c\'est moi qui l\'ai créé — avec amour, un peu de folie et une grande envie de se souvenir. J\'ai grandi entre l\'Italie et la France, la tête toujours dans les nuages et le cœur toujours en mouvement. J\'ai rencontré Jordan un après-midi ordinaire, et depuis ce jour, plus rien n\'a été pareil.' },
-  birthLabel:    { it: 'Nata a Parigi il 06/03/1993',                    fr: 'Née à Paris le 06/03/1993' },
+  bio:           { it: 'Sono Sara, italiana a Parigi dal 2020. Appassionata di culture diverse e di lingue, ho iniziato il mio percorso universitario studiando cultura inglese e spagnola, e poi, per quei giri un po’ imprevedibili che prende la vita, mi sono ritrovata a parlare anche francese e portoghese. Ed è proprio questa passione per le lingue che, alla fine, mi ha fatto incontrare Jo. Ho mille interessi, che coltivo a fasi alterne: posso essere una viaggiatrice avventurosa, sempre pronta a partire, oppure trasformarmi in una nonnina felice con i suoi lavori all’uncinetto. Adoro gli animali e mi piace leggere di psicologia, diritti umani e femminismo, temi su cui è facilissimo coinvolgermi in una discussione. Mi definirei una persona comprensiva, paziente e calma. Non sono molto festaiola, ma ho una passione assoluta per la pizza. Cresciuta in una famiglia di informatici, ho sempre avuto una naturale dimestichezza con la tecnologia: sono curiosa, veloce e mi piace capire come funzionano le cose, infatti eccomi qui a creare questo Blog per Jordan dopo aver svolto il mio bootcamp di development web!',
+                   fr: 'Je suis Sara, italienne à Paris depuis le 2020. Passionnée par les cultures et les langues, j’ai commencé mon parcours universitaire en étudiant les cultures anglaise et espagnole. Puis, au fil des détours parfois imprévisibles de la vie, je me suis retrouvée parler aussi français et portugais. Et c’est justement cette passion pour les langues qui m’a finalement fait rencontrer Jo. J’ai mille centres d’intérêt, que je cultive par périodes : je peux être une voyageuse aventurière, toujours prête à partir, ou me transformer en petite mamie heureuse avec ses travaux au crochet. J’aime profondément les animaux et j’apprécie lire sur la psychologie, les droits humains et le féminisme, des sujets sur lesquels il est très facile de m’embarquer dans une discussion. Je me définirais comme une personne compréhensive, patiente et calme. Je ne suis pas très fêtarde, mais j’ai une passion absolue pour la pizza. Ayant grandi dans une famille d’informaticiens, j’ai toujours eu une certaine aisance avec la technologie. Me voilà donc à créer ce blog pour Jo après mon bootcamp de développement web !' },
+  birthLabel:    { it: 'Nata a Napoli il 02/09/1995',                    fr: 'Née à Naples le 02/09/1995' },
   passionsLabel: { it: 'PASSIONI',                                        fr: 'PASSIONS' },
   footerText:    { it: 'Creato da Sara per Jordan con tanto amore ©2026',  fr: 'Créé par Sara pour Jordan avec beaucoup d\'amour ©2026' },
 };
