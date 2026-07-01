@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 72px;
+  padding-top: 120px;
 }
 
 .hero-card {
@@ -11,8 +11,8 @@
   border-radius: 28px;
   border: 1px solid var(--line);
   padding: 40px 42px 42px;
-  max-height: 560px;
-  max-width: 800px;
+  max-height: 1000px;
+  max-width: 1000px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,6 @@
   background: var(--rose-light);
 }
 
-/* avatar hover: solo scale, niente overlay */
 .avatar-overlay { display: none; }
 
 .avatar-wrap:hover .avatar-frame {
@@ -153,15 +152,14 @@
 }
 
 /* ── RESPONSIVE LAPTOP ── */
-@media (max-height: 850px), (max-width: 1440px) {
+@media (max-height: 850px), {
   .hero {
-    /* Riduciamo drasticamente lo spazio bianco sopra la card */
     padding-top: 40px;
   }
 
   .hero-card {
     padding: 24px 32px 32px;
-    gap: 20px; /* Riduciamo le distanze interne */
+    gap: 20px;
   }
 
   .avatars {
@@ -169,7 +167,6 @@
   }
 
   .avatar-frame {
-    /* Avatar leggermente ridimensionati per far entrare il bottone */
     width: 130px;
     height: 162px;
   }

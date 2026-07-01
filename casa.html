@@ -72,16 +72,17 @@
       padding: 0 24px 60px;
       display: flex;
       flex-direction: column;
-      gap: 16px; /* Spaziatura uniforme tra i macro blocchi */
+      gap: 16px;
     }
 
     /* ── Text blocs ── */
     .figma-text-box {
       padding: 24px;
+      padding-bottom: 10px;
+      padding-top: 10px;
       font-size: 0.88rem;
       line-height: 1.6;
       color: var(--carbon);
-      display: flex;
       align-items: center;
     }
 
@@ -121,9 +122,6 @@
     .h-entrance { aspect-ratio: 1 / 1.2; }
     .h-fridge { aspect-ratio: 1 / 1.2; }
 
-    .grid-col .figma-text-box {
-      flex-grow: 1;
-    }
 
     /* ── FOOTER ── */
     .site-footer {
@@ -157,7 +155,9 @@
 <div class="casa-container">
 
   <div class="figma-text-box full-width" id="text1">
-    Il nostro divano super comodo dove iniziano coccole infinite, pronto ad ospitare chi ci visita e dove adoriamo riposare e chiacchierare dopo mangiato
+    Eccoci sul nostro bellissimo divano gigante, il posto perfetto per riposare dopo mangiato,
+    chiacchierare all’infinito e riempirci di coccole quando torniamo dal lavoro. È anche il
+    cuore della casa quando accogliamo le persone a cui vogliamo bene, sempre nel massimo del comfort.
   </div>
 
   <div class="figma-grid">
@@ -165,7 +165,12 @@
     <div class="grid-col">
       <img src="assets/img/casa-divano.jpg" alt="Il divano" class="figma-img h-sofa">
       <div class="figma-text-box" id="text2">
-        Il nostro prezioso rifugio, dove balliamo e cantiamo a squarciagola con i nostri accappatoi e pantofole cordinate
+        I nostri 42 m² nell’11° arrondissement, già pieni di amore e ricordi, dove ci piace
+        ballare con accappatoi e pantofole coordinate, ridere a crepapelle e collezionare
+        foto ricordo dei nostri viaggi. È il nostro piccolo rifugio nel cuore di Parigi,
+        sempre in movimento ma capace di fermare il tempo nei momenti più semplici, tra
+        una playlist messa su a caso, una luce soffusa e la sensazione di essere
+        esattamente dove dobbiamo essere.
       </div>
       <img src="assets/img/casa-tavolo.jpg" alt="A letto" class="figma-img h-bed">
       <img src="assets/img/casa-pc.jpg" alt="Angolo lavoro" class="figma-img h-pc">
@@ -180,11 +185,22 @@
 
     <div class="grid-col">
       <div class="figma-text-box" id="text3">
-        La cucina completamente modificata da noi dove adoriamo cucinare e dove il mio chef preferito fa sempre testare pietanze squisite.
+        E poi c’è la nostra bellissima cucina. Fa quasi ridere pensare che prima fosse tutta
+        arancione e decisamente bruttina, no? L’abbiamo completamente trasformata in una cucina
+        da sogno, dove ci piace cucinare, tenerla in ordine ed è diventata una delle nostre stanze
+        preferite. Jo è uno chef magnifico e io sono la sua prima fan e sous-chef: ogni occasione è
+        buona per mettersi ai fornelli e sperimentare. Siamo anche super attrezzati, il che rende
+        tutto ancora più divertente, diciamo che non ci manca davvero nulla per sentirci un po’ come
+        a casa di veri chef.
       </div>
       <img src="assets/img/casa-relax.jpg" alt="Relax" class="figma-img h-laptop">
       <div class="figma-text-box" id="text4">
-        Le colazioni e i brunc dei weekend dove iniziano le nostre conversazioni infinite
+        È il nostro piccolo mondo, dove le colazioni e i brunch sono diventati quasi
+        leggendari, al punto da non avere nulla da invidiare alle migliori caffetterie
+        di Parigi. Tra caffè lunghi, pane tostato, ricette improvvisate e tavola sempre
+        un po’ troppo piena, questi momenti sono diventati un vero rituale. È lì che
+        iniziano le giornate migliori, tra chiacchiere lente, musica in sottofondo e
+        l’idea che, in fondo, non serve altro per essere felici.
       </div>
       <img src="assets/img/casa-frigo.jpg" alt="Il frigo" class="figma-img h-fridge">
     </div>
@@ -192,7 +208,14 @@
   </div>
 
   <div class="figma-text-box full-width" id="text5">
-    Ogni angolo è stato concepito con amore e impegno di entrambi costruendo il miglior posto del mondo per noi, adoriamo la nostra casetta che sentiamo proprio nostra
+    Ogni angolo è stato pensato con amore e costruito con l’impegno di entrambi,
+    creando quello che per noi è semplicemente il posto migliore del mondo. Adoriamo
+    la nostra casetta, che sentiamo davvero nostra, in ogni dettaglio e in ogni piccola
+    abitudine che abbiamo costruito insieme. Lui è il guardiano delle chiavi quando usciamo,
+    il test beta delle mie mille applicazioni e il custode delle piante, mentre io
+    riempio il calendario di tutti i nostri impegni e progetti. Un piccolo equilibrio
+    quotidiano che racconta perfettamente il nostro modo di vivere insieme❤️.
+
   </div>
 
 </div>
@@ -206,17 +229,17 @@ let lang = localStorage.getItem('siteLang') || 'it';
 
 const strings = {
   backLabel:  { it: 'Torna alla home',                                  fr: 'Retour à l\'accueil' },
-  pageTitle:  { it: 'Benvenuti nella nostra casetta',                   fr: 'Bienvenue dans notre petit chez-nous' },
-  text1:      { it: 'Il nostro divano super comodo dove iniziano coccole infinite, pronto ad ospitare chi ci visita e dove adoriamo riposare e chiacchierare dopo mangiato.',
-                fr: 'Notre canapé ultra-confortable où commencent les câlins infinis, prêt à accueillir nos visiteurs et où on adore se reposer et discuter après manger.' },
-  text2:      { it: 'Il nostro prezioso rifugio, dove balliamo e cantiamo a squarciagola con i nostri accappatoi e pantofole cordinate.',
-                fr: 'Notre précieux refuge, où on danse et chante à tue-tête avec nos peignoirs et chaussons assortis.' },
-  text3:      { it: 'La cucina completamente modificata da noi dove adoriamo cucinare e dove il mio chef preferito fa sempre testare pietanze squisite.',
-                fr: 'La cuisine entièrement réaménagée par nous, où on adore cuisiner et où mon chef préféré me fait toujours goûter des plats exquis.' },
-  text4:      { it: 'Le colazioni e i brunch dei weekend dove iniziano le nostre conversazioni infinite.',
-                fr: 'Les petits-déjeuners et brunchs du week-end où commencent nos conversations infinies.' },
-  text5:      { it: 'Ogni angolo è stato concepito con amore e impegno di entrambi costruendo il miglior posto del mondo per noi, adoriamo la nostra casetta che sentiamo proprio nostra.',
-                fr: 'Chaque recoin a été pensé avec amour et effort par nous deux, construisant le meilleur endroit du monde pour nous — on adore notre petit chez-nous qui nous ressemble vraiment.' },
+  pageTitle:  { it: 'Benvenuti nella nostra casetta🏠',                   fr: 'Bienvenue dans notre petit chez-nous🏠' },
+  text1:      { it: 'Eccoci sul nostro bellissimo divano gigante, il posto perfetto per riposare dopo mangiato, chiacchierare all’infinito e riempirci di coccole quando torniamo dal lavoro. È anche il cuore della casa quando accogliamo le persone a cui vogliamo bene, sempre nel massimo del comfort.',
+                fr: 'Nous voilà sur notre magnifique canapé géant, l’endroit idéal pour se reposer après manger, discuter pendant des heures et profiter de moments de tendresse en rentrant du travail. C’est aussi le cœur de la maison pour accueillir les personnes qui comptent pour nous, toujours dans le plus grand confort.' },
+  text2:      { it: 'I nostri 42 m² nell’11° arrondissement, già pieni di amore e ricordi, dove ci piace ballare con accappatoi e pantofole coordinate, ridere a crepapelle e collezionare foto ricordo dei nostri viaggi. È il nostro piccolo rifugio nel cuore di Parigi, sempre in movimento ma capace di fermare il tempo nei momenti più semplici, tra una playlist messa su a caso, una luce soffusa e la sensazione di essere esattamente dove dobbiamo essere. ',
+                fr: 'Nos 42 m² dans le 11eme arrondissement, déjà remplis d’amour et de souvenirs, où l’on aime danser en peignoirs et pantoufles assortis, rire et collectionner les photos souvenirs de nos voyages. C’est notre petit refuge au cœur de Paris, toujours en mouvement mais capable de suspendre le temps dans les moments les plus simples, entre une playlist choisie au hasard, une lumière tamisée et cette sensation d’être exactement là où l’on doit être.' },
+  text3:      { it: 'E poi c’è la nostra bellissima cucina. Fa quasi ridere pensare che prima fosse tutta arancione e decisamente bruttina, no? L’abbiamo completamente trasformata in una cucina da sogno, dove ci piace cucinare, tenerla in ordine ed è diventata una delle nostre stanze preferite. Jo è uno chef magnifico e io sono la sua prima fan e sous-chef: ogni occasione è buona per mettersi ai fornelli e sperimentare. Siamo anche super attrezzati, il che rende tutto ancora più divertente, diciamo che non ci manca davvero nulla per sentirci un po’ come a casa di veri chef.',
+                fr: 'Et puis il y a notre magnifique cuisine. Difficile de croire qu’avant, elle était toute orange et franchement pas très belle, non ? On l’a complètement transformée en une cuisine de rêve, où l’on aime cuisiner, la garder bien rangée, et qui est devenue l’une de nos pièces préférées. Jo est un chef incroyable et je suis sa première fan et sous-cheffe : chaque occasion est bonne pour se mettre aux fourneaux et expérimenter. On est aussi bien équipés, ce qui rend tout encore plus agréable, disons qu’il ne nous manque vraiment rien pour se sentir comme de vrais chefs à la maison.' },
+  text4:      { it: 'È il nostro piccolo mondo, dove le colazioni e i brunch sono diventati quasi leggendari, al punto da non avere nulla da invidiare alle migliori caffetterie di Parigi. Tra caffè lunghi, pane tostato, ricette improvvisate e tavola sempre un po’ troppo piena, questi momenti sono diventati un vero rituale. È lì che iniziano le giornate migliori, tra chiacchiere lente, musica in sottofondo e l’idea che, in fondo, non serve altro per essere felici.',
+                fr: 'C’est notre petit monde, où les petits-déjeuners et les brunchs sont devenus presque légendaires, au point de n’avoir rien à envier aux meilleurs cafés de Paris. Entre cafés, tartines, recettes improvisées et une table toujours remplie, ces moments sont devenus un vrai rituel. C’est là que commencent les plus belles journées, entre conversations tranquilles, musique en fond et cette idée que il ne faut pas grand-chose pour être heureux.' },
+  text5:      { it: 'Ogni angolo è stato pensato con amore e costruito con l’impegno di entrambi, creando quello che per noi è semplicemente il posto migliore del mondo. Adoriamo la nostra casetta, che sentiamo davvero nostra, in ogni dettaglio e in ogni piccola abitudine che abbiamo costruito insieme. Lui è il guardiano delle chiavi quando usciamo, il test beta delle mie mille applicazioni e il custode delle piante, mentre io riempio il calendario di tutti i nostri impegni e progetti. Un piccolo equilibrio quotidiano che racconta perfettamente il nostro modo di vivere insieme❤️',
+                fr: 'Chaque coin a été pensé avec amour et construit avec l’implication de nous deux, créant ce qui est pour nous tout simplement le meilleur endroit du monde. Nous adorons notre petit chez-nous, que nous sentons vraiment à nous, dans chaque détail et dans chaque petite habitude que nous avons construite ensemble. Lui est le gardien des clés quand nous sortons, le test bêta de mes mille applications et le gardien des plantes, tandis que je remplis le calendrier de tous nos rendez-vous et projets. Un petit équilibre quotidien qui raconte parfaitement notre façon de vivre ensemble❤️' },
   siteFooter: { it: 'Creato da Sara per Jordan con tanto amore ©2026',   fr: 'Créé par Sara pour Jordan avec beaucoup d\'amour ©2026' },
 };
 
