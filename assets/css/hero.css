@@ -146,9 +146,9 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 540px) {
-  .hero-card    { padding: 40px 24px 36px; gap: 24px; }
-  .avatars      { gap: 16px; }
-  .avatar-frame { width: 130px; height: 162px; }
+  .hero-card    { padding: 40px 24px 36px; gap: 24px; margin-top: 50px;}
+  .avatars      { width: 230px; height: 262px; gap: 16px; }
+  .avatar-frame {   width: 170px; height: 210px; }
 }
 
 /* ── RESPONSIVE LAPTOP ── */
