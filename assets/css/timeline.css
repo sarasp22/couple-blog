@@ -203,6 +203,8 @@
   .tl-event.active { flex-direction: column !important; }
   .ev-photo { width: 100%; flex: unset; }
   .ev-img, .ev-img-placeholder { width: 100%; height: 400px; }
+  .ev-body { line-height: 1.3; }
+
 
   .tl-track {
     height: 14px;
