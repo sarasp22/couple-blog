@@ -8,56 +8,56 @@ const DESTINATIONS = [
     places: [
       {
         loc: 'Napoli',
-        desc_it: 'Pizza, caos e bellezza assoluta. Napoli non si spiega, si vive.',
-        desc_fr: 'Pizza, chaos et beauté absolue. Naples ne s\'explique pas, elle se vit.',
+        desc_it: 'Averti nella mia Napoli e mostrarti i luoghi che porto nel cuore mi ha resa immensamente felice. Spero di essere riuscita a farti entrare Napoli dentro, anche solo un po’, come Parigi è entrata dentro di me.',
+        desc_fr: 'T’avoir dans ma Naples et te faire découvrir les endroits qui me tiennent à cœur m’a rendue profondément heureuse. J’espère avoir réussi à te faire entrer Naples en toi, ne serait-ce qu’un peu, comme Paris est entrée en moi.',
         img: 'assets/img/napoli.jpg'
       },
       {
         loc: 'Rocamadour',
-        desc_it: 'Mare cristallino e spiagge di sabbia bianca da sogno.',
-        desc_fr: 'Mer cristalline et plages de sable blanc de rêve.',
+        desc_it: 'Il primo regalo di compleanno che mi hai fatto è stato qualcosa di stupendo: un viaggio a sorpresa che porto nel cuore. Mi ha fatto vedere quanto amore e impegno metti per rendermi felice, e mi ha permesso di conoscerti ancora di più.',
+        desc_fr: 'Le premier cadeau d’anniversaire que tu m’as fait a été quelque chose de magnifique : un voyage surprise que je garde dans le cœur. Il m’a montré tout l’amour et l’engagement que tu mets pour me rendre heureuse, et m’a permis de te connaître encore davantage.',
         img: 'assets/img/rocamadour.jpeg'
       },
       {
         loc: 'Milano',
-        desc_it: 'La strada più bella del mondo, punto.',
-        desc_fr: 'La plus belle route du monde, point.',
+        desc_it: 'La mia terza città, e anche la tua seconda, è stata lo scenario perfetto per fare i turisti insieme in un luogo che sento come casa. È stato bello condividere un pezzo di me e scoprire un po’ della tua storia.',
+        desc_fr: 'Ma troisième ville, et aussi ta deuxième, a été le cadre parfait pour jouer les touristes ensemble dans un endroit que je considère comme chez moi. C’était beau de partager une part de moi et de découvrir un peu de ton histoire.',
         img: 'assets/img/milano.jpg'
       },
       {
         loc: 'Affile',
-        desc_it: 'La strada più bella del mondo, punto.',
-        desc_fr: 'La plus belle route du monde, point.',
-        img: 'assets/img/affile.jpg'
+        desc_it: 'Il mio posto preferito al mondo, il mio laghetto: spero ti sia piaciuto quanto piace a me. E spero un giorno di tornarci con qualcuno in più, insieme a noi.',
+        desc_fr: 'Mon endroit préféré au monde, un morceau de mon histoire et une part de moi. Je rêve qu’un jour nous ayons une petite maison là-bas et d’y retourner avec toi comme je le faisais enfant.',
+        img: 'assets/img/affile2.jpg'
       },
       {
         loc: 'Saint-Malo',
-        desc_it: 'Il nostro angolo segreto sui Monti Simbruini, lontano da tutto.',
-        desc_fr: 'Notre coin secret dans les Monti Simbruini, loin de tout.',
+        desc_it: 'Il weekend che ci siamo regalati in Bretagna per il nostro primo anniversario. In questa città abbiamo anche litigato, non ricordo nemmeno il perché, ma so che anche quello ci ha uniti ancora di più. Ogni esperienza non fa altro che rafforzare il nostro legame.',
+        desc_fr: 'Le week-end que nous nous sommes offert en Bretagne pour notre premier anniversaire. Dans cette ville, nous nous sommes aussi disputés, je ne me souviens même plus pourquoi, mais je sais que cela nous a encore plus rapprochés. Chaque expérience ne fait que renforcer notre lien.',
         img: 'assets/img/saintmalo.jpg'
       },
       {
         loc: 'Côtes-dArmor',
-        desc_it: 'Il nostro angolo segreto sui Monti Simbruini, lontano da tutto.',
-        desc_fr: 'Notre coin secret dans les Monti Simbruini, loin de tout.',
+        desc_it: 'La Costa di Granito Rosa, grazie amore per aver guidato per tutta la Bretagna per realizzare questo mio piccolo capriccio. Come sempre in Bretagna ha piovuto, ma questo non ha impedito che fosse comunque un weekend incredibile, come tutto quello che vivo con te.',
+        desc_fr: 'La Côte de Granit Rose, merci mon amour d’avoir conduit à travers toute la Bretagne pour réaliser ce petit caprice. Comme toujours en Bretagne, il a plu, mais cela n’a pas empêché que ce soit un week-end incroyable, comme tout ce que je vis avec toi.',
         img: 'assets/img/granito.jpg'
       },
       {
         loc: 'Staffal',
-        desc_it: 'La strada più bella del mondo, punto.',
-        desc_fr: 'La plus belle route du monde, point.',
+        desc_it: 'La prima volta a sciare insieme: spoiler, non sono per niente brava a sciare mentre tu sei quasi un pro. Nonostante la frustrazione per la pista rossa fatta tra le cadute, ho apprezzato tantissimo la tua pazienza, non solo con me. Grazie amore!',
+        desc_fr: 'Notre première fois au ski ensemble : spoiler, je ne suis pas du tout douée en ski alors que toi tu es presque un pro. Malgré la colère sur la piste rouge faite de chutes, j’ai énormément apprécié ta patience, pas seulement avec moi. Merci mon amour !',
         img: 'assets/img/staffal.jpg'
       },
       {
         loc: 'Costiera Amalfitana',
-        desc_it: 'La strada più bella del mondo, punto.',
-        desc_fr: 'La plus belle route du monde, point.',
+        desc_it: 'La MotoGP sulla Vespa rossa nelle strade della Costiera Amalfitana è ormai indimenticabile. Sono felicissima di averti aiutato a realizzare questo piccolo sogno: nonostante la pioggia e i nostri malanni, è stata una piccola parentesi magica.',
+        desc_fr: 'La “MotoGP” sur la Vespa rouge dans les routes de la Côte amalfitaine est désormais inoubliable. Je suis très heureuse d’avoir pu t’aider à réaliser ce petit rêve : malgré la pluie et nos petits soucis de santé, ça a été une parenthèse magique.',
         img: 'assets/img/vespa.jpg'
       },
       {
         loc: 'Pompei',
-        desc_it: 'La strada più bella del mondo, punto.',
-        desc_fr: 'La plus belle route du monde, point.',
+        desc_it: 'Io, te e la nostra guida virtuale Gemini sotto la pioggia, tra le strade degli scavi di Pompei. Riesci a rendere anche le cose più semplici completamente eccezionali.',
+        desc_fr: 'Moi, toi et notre guide virtuelle Gemini sous la pluie, dans les rues des fouilles de Pompéi. Tu arrives à rendre même les choses les plus simples absolument exceptionnelles.',
         img: 'assets/img/pompei.jpg'
       },
     ]
@@ -71,14 +71,14 @@ const DESTINATIONS = [
     places: [
       {
         loc: 'Copenaghen',
-        desc_it: 'Una giornata intera tra castelli da favola lungo il fiume Loira.',
-        desc_fr: 'Une journée entière dans des châteaux de conte de fées le long de la Loire.',
+        desc_it: 'Il nostro primo weekend all’estero insieme: è stato un fine settimana davvero rilassante, trascorso in sella alle nostre bici. Sei la guida in bici migliore che ci sia.',
+        desc_fr: 'Notre premier week-end à l’étranger ensemble : un week-end vraiment relaxant, passé sur la selle de nos vélos. Tu es le meilleur guide à vélo qui soit.',
         img: 'assets/img/copenaghen.jpg'
       },
       {
         loc: 'Slovaer',
-        desc_it: 'Lavanda, mercati provenzali e tramonti rosa sul Mediterraneo.',
-        desc_fr: 'Lavande, marchés provençaux et couchers de soleil roses sur la Méditerranée.',
+        desc_it: 'Il tuo regalo di compleanno per i miei 30 anni: mi hai regalato un sogno che si è realizzato, vedere l’aurora boreale. Un altro aneddoto da aggiungere alla nostra lista di momenti assurdi: aver pagato per vederla per poi scoprire che la si poteva ammirare ogni sera gratuitamente fuori casa.',
+        desc_fr: 'Ton cadeau d’anniversaire pour mes 30 ans : tu m’as offert un rêve devenu réalité, voir les aurores boréales. Une autre anecdote à ajouter à notre liste de moments improbables : avoir payé pour les voir pour ensuite découvrir qu’on pouvait les admirer gratuitement chaque soir devant la maison.',
         img: 'assets/img/norvegia.jpg'
       },
     ]
