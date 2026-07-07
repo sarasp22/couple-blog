@@ -92,26 +92,26 @@ const DESTINATIONS = [
     places: [
       {
         loc: 'Salento',
-        desc_it: 'Aperitivi in Navigli, la Madonnina e mille posti nuovi da scoprire.',
-        desc_fr: 'Apéros aux Navigli, la Madonnina et mille nouveaux endroits à découvrir.',
+        desc_it: 'Trekking nel Salento: per me ha significato tantissimo condividere con te questo viaggio unico alla scoperta della Colombia. Paesaggi incredibili e un’avventura che porterò sempre con me.',
+        desc_fr: 'Trekking dans le Salento : cela a énormément compté pour moi de partager avec toi ce voyage unique à la découverte de la Colombie. Des paysages incroyables et une aventure que je garderai toujours avec moi.',
         img: 'assets/img/salento.jpg'
       },
       {
         loc: 'Galapagos',
-        desc_it: 'Cinque paesi colorati abbarbicati sulle scogliere liguri.',
-        desc_fr: 'Cinq villages colorés accrochés aux falaises liguriennes.',
+        desc_it: 'La mia prima immersione, e una delle tante per te: non avrei mai immaginato di vivere un’esperienza del genere prima di conoscerti. Un momento indimenticabile, in isole straordinarie come le Galápagos, tra una natura e degli animali semplicemente incredibili.',
+        desc_fr: 'Ma première plongée, et une parmi tant d’autres pour toi : je n’aurais jamais imaginé vivre une expérience comme celle-ci avant de te rencontrer. Un moment inoubliable, dans des îles extraordinaires comme les Galápagos, au milieu d’une nature et d’animaux tout simplement incroyables.',
         img: 'assets/img/galapagos.jpg'
       },
       {
-        loc: 'Casa en el agua',
-        desc_it: 'Cinque paesi colorati abbarbicati sulle scogliere liguri.',
-        desc_fr: 'Cinq villages colorés accrochés aux falaises liguriennes.',
+        loc: 'Islas del Rosario',
+        desc_it: 'Dopo una parte di viaggio estremamente avventurosa e faticosa, una piccola parentesi di pace nel mare caraibico del nord della Colombia. Tra acque cristalline, scimmiette curiose e pappagalli dispettosi, ho ritrovato la pace tra le tue braccia.',
+        desc_fr: 'Après une partie du voyage intense et éprouvante, une douce parenthèse de paix dans la mer des Caraïbes au nord de la Colombie. Entre eaux cristallines, petits singes curieux et perroquets malicieux, j’ai retrouvé la paix dans tes bras.',
         img: 'assets/img/casaagua.jpg'
       },
       {
         loc: 'Tayrona',
-        desc_it: 'Cinque paesi colorati abbarbicati sulle scogliere liguri.',
-        desc_fr: 'Cinq villages colorés accrochés aux falaises liguriennes.',
+        desc_it: 'La fine del nostro viaggio, di nuovo all’insegna dell’avventura, tra giungla, animali, frutti di cacao e tanto, tantissimo sudore. Dormire in una capannina in mezzo alla foresta è stata un’esperienza unica: abbiamo macinato chilometri a piedi, accompagnati da tante scimmiette che giocavano tra gli alberi.',
+        desc_fr: 'La fin de notre voyage, à nouveau sous le signe de l’aventure, entre jungle, animaux, fruits de cacao et beaucoup, beaucoup de sueur. Dormir dans une petite cabane au cœur de la forêt a été une expérience unique : nous avons parcouru des kilomètres à pied, entourés de petits singes qui jouaient dans les arbres.',
         img: 'assets/img/tayrona.jpg'
       },
     ]
@@ -125,26 +125,26 @@ const DESTINATIONS = [
     places: [
       {
         loc: 'Instabul',
-        desc_it: 'Pizza, caos e bellezza assoluta. Napoli non si spiega, si vive.',
-        desc_fr: 'Pizza, chaos et beauté absolue. Naples ne s\'explique pas, elle se vit.',
+        desc_it: 'Tra gattini e tanto kebab, abbiamo passato giorni felici in questa città magica: Istanbul. Il nostro primo viaggio itinerante in coppia, e l’inizio di tante altre avventure insieme.',
+        desc_fr: 'Entre petits chats et beaucoup de kebab, nous avons passé des jours heureux dans cette ville magique : Istanbul. Notre premier voyage itinérant en couple, et le début de tant d’autres aventures ensemble.',
         img: 'assets/img/instabul.jpg'
       },
       {
         loc: 'Cappadocia',
-        desc_it: 'La strada più bella del mondo, punto.',
-        desc_fr: 'La plus belle route du monde, point.',
+        desc_it: 'Uno dei ricordi più belli in assoluto: quando abbiamo ricevuto l’email della nostra amatissima signora Cavanna che ci ha scelti per la nostra casetta. Finalmente potevamo tornare a respirare e goderci davvero il nostro viaggio.',
+        desc_fr: 'Un de mes plus beaux souvenirs : quand nous avons reçu l’email de notre chère Madame Cavanna qui nous a choisis pour notre petit chez-nous. On pouvait enfin respirer à nouveau et profiter pleinement de notre voyage.',
         img: 'assets/img/turchia.jpg'
       },
       {
-        loc: 'Cappadocia',
-        desc_it: 'La strada più bella del mondo, punto.',
-        desc_fr: 'La plus belle route du monde, point.',
+        loc: 'Goreme',
+        desc_it: 'La meraviglia di svegliarsi nel buio totale alle cinque del mattino e scoprire, appena fuori, mongolfiere gigantesche che volano sopra le nostre teste: impagabile. Non smetterò mai di ridere per le mie foto col broncio perché non erano come le volevo io… ma resta uno degli aneddoti più divertenti per me.',
+        desc_fr: 'La magie de se réveiller dans le noir complet à cinq heures du matin et de découvrir, juste dehors, d’immenses montgolfières au-dessus de nos têtes : inestimable. Je ne cesserai jamais de rire de mes photos boudeuses parce qu’elles n’étaient pas comme je les voulais… mais ça reste l’une des anecdotes les plus drôles pour moi.',
         img: 'assets/img/mongolfiere.jpg'
       },
       {
         loc: 'Pamukkale',
-        desc_it: 'Mare cristallino e spiagge di sabbia bianca da sogno.',
-        desc_fr: 'Mer cristalline et plages de sable blanc de rêve.',
+        desc_it: 'Dopo 10 ore di viaggio in bus siamo arrivati in un luogo che sognavo di vedere da tanto tempo. Con te realizzare i sogni sembra qualcosa di estremamente semplice: un viaggio fatto di meraviglie, introspezione e momenti che ci hanno permesso di conoscerci ancora meglio.',
+        desc_fr: 'Après 10 heures de bus, nous sommes arrivés dans un endroit que je rêvais de découvrir depuis longtemps. Avec toi, réaliser mes rêves semble tellement simple : un voyage rempli de merveilles, d’introspection et de moments qui nous ont permis de mieux nous connaître encore.',
         img: 'assets/img/pamukkale.jpg'
       },
     ]
