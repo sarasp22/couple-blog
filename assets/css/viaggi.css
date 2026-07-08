@@ -164,7 +164,7 @@
   .map-pin {
     width: 11px;
     height: 11px;
-    border-width: 2px;
+    border-width: 1.5px!;
   }
 }
 
