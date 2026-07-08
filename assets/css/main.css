@@ -32,7 +32,7 @@ body {
   font-family: 'Nunito', sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
-  cursor: none; /* nasconde il cursore default */
+  cursor: none; 
 }
 
 /* ── CURSORE CUORICINO ── */
@@ -49,7 +49,6 @@ body {
   filter: drop-shadow(0 1px 3px rgba(212,133,122,0.4));
 }
 
-/* ripristina cursore normale su elementi interattivi */
 a, button, input, [role="button"] {
   cursor: none;
 }

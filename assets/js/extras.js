@@ -51,12 +51,10 @@ function updateCountdownLang() {
 document.addEventListener('DOMContentLoaded', () => {
   updateCountdown();
   updateCountdownLang();
-  setInterval(updateCountdown, 60000); /* aggiorna ogni minuto */
+  setInterval(updateCountdown, 60000);
 });
 
-/* ── SPOTIFY: appare quando la timeline si apre ──
-   Viene chiamato da toggleTimeline() in timeline.js
-   ──────────────────────────────────────────────── */
+
 function toggleSpotify(open) {
   const wrap = document.getElementById('spotifyWrap');
   if (wrap) wrap.classList.toggle('visible', open);
