@@ -128,6 +128,7 @@ function toggleTimeline() {
   sec.classList.toggle('open', timelineOpen);
   btn.classList.toggle('open', timelineOpen);
   viaggi.style.display = timelineOpen ? 'block' : 'none';
+  if (typeof toggleSpotify === 'function') toggleSpotify(timelineOpen);
   if (timelineOpen) {
     setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120);
   }

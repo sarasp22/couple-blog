@@ -21,7 +21,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      background: var(--cream);
+      background-color: var(--cream);
+      background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 31px,
+    #E8DDD8 31px,
+    #E8DDD8 32px
+     );
       color: var(--carbon);
       font-family: 'Nunito', sans-serif;
       min-height: 100vh;

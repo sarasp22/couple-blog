@@ -12,12 +12,12 @@
 </head>
 <body>
 
-  <!-- ── language bottom ── -->
+  <div id="heart-cursor">♥</div>
+
+  <!-- ── LANGUAGE BUTTON ── -->
   <button class="lang-btn" id="langBtn" onclick="toggleLang()"></button>
 
-  <!-- ══════════════════════════════════════
-       HERO
-  ══════════════════════════════════════ -->
+  <!-- HERO-->
   <section class="hero">
     <div class="hero-card">
 
@@ -45,7 +45,28 @@
         </a>
       </div>
 
-      <!-- CTA: this open timeline + viaggi -->
+      <!-- COUNTDOWN ── -->
+      <div class="countdown-wrap" id="countdownWrap">
+        <p class="countdown-label" id="countdownLabel">Insieme da</p>
+        <div class="countdown-numbers">
+          <div class="countdown-unit">
+            <span class="countdown-val" id="cdYears">0</span>
+            <span class="countdown-unit-label" id="cdYearsLabel">anni</span>
+          </div>
+          <div class="countdown-sep">·</div>
+          <div class="countdown-unit">
+            <span class="countdown-val" id="cdMonths">0</span>
+            <span class="countdown-unit-label" id="cdMonthsLabel">mesi</span>
+          </div>
+          <div class="countdown-sep">·</div>
+          <div class="countdown-unit">
+            <span class="countdown-val" id="cdDays">0</span>
+            <span class="countdown-unit-label" id="cdDaysLabel">giorni</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
       <button class="cta-btn" id="ctaBtn" onclick="toggleTimeline()">
         <span id="ctaText">Clicca qui per più dettagli</span>
         <span class="cta-icon">↓</span>
@@ -54,64 +75,58 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
-       TIMELINE
-  ══════════════════════════════════════ -->
+  <!-- SPOTIFY PLAYER -->
+<div class="spotify-wrap" id="spotifyWrap">
+  <p class="spotify-label">🎵</p>
+  <iframe
+    src="https://open.spotify.com/embed/track/7K4ny4ARBDr5z7ftcAzi6i?utm_source=generator&theme=0"
+    width="100%"
+    height="152"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+</div>
+
+  <!-- TIMELINE -->
   <section id="timeline-section">
     <div class="timeline-inner">
-
       <h2 class="tl-heading">
         <span id="tlHeading">La nostra <span class="accent">storia:</span></span>
       </h2>
-         <p class="tl-subheading" id="tlSub">Clicca sulle date per scoprire ogni momento</p>
-
-      <!-- pins of timeline -->
+      <p class="tl-subheading" id="tlSub">Clicca sulle date per scoprire ogni momento</p>
       <div class="tl-track-wrap">
         <div class="tl-line"></div>
         <div class="tl-track" id="tlTrack"></div>
       </div>
-
-      <!-- Card evento attivo -->
       <div class="tl-events" id="tlEvents"></div>
-
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
-       VIAGGI
-  ══════════════════════════════════════ -->
+  <!-- VIAGGI -->
   <section id="viaggi-section">
-
     <h2 class="viaggi-heading" id="viaggiHeading">I nostri viaggi insieme:</h2>
     <p class="viaggi-subheading" id="viaggiSub">
       Clicca sulla mappa per scoprire i nostri ricordi più belli
     </p>
-
-    <!-- Map + tags -->
     <div class="viaggi-main">
-      <div class="dest-col left"  id="destLeft"></div>
+      <div class="dest-col left" id="destLeft"></div>
       <div class="map-wrap" id="mapWrap">
         <img src="assets/img/mappa.jpg" alt="Mappa dei nostri viaggi" class="map-img">
       </div>
       <div class="dest-col right" id="destRight"></div>
     </div>
-
-    <!-- Photos gallery viaggi -->
     <div class="viaggi-gallery" id="viaggiGallery">
       <h3 class="gallery-dest-title" id="galleryTitle"></h3>
       <div class="gallery-grid" id="galleryGrid"></div>
     </div>
-
   </section>
 
-  <!-- ── SCRIPT (important: lang → timeline → viaggi) ── -->
   <script src="assets/js/lang.js"></script>
   <script src="assets/js/timeline.js"></script>
   <script src="assets/js/viaggi.js"></script>
+  <script src="assets/js/extras.js"></script>
 
-  <!-- ══════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════ -->
   <footer class="site-footer">
     <p id="siteFooter">Creato da Sara per Jordan con tanto amore ©2026</p>
   </footer>

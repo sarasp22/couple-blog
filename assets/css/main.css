@@ -10,21 +10,51 @@
   --mid:        #6B6B6B;
   --line:       #E5DDD8;
   --white:      #FFFFFF;
+  --ruled-line: #E8DDD8;
+  --ruled-gap:  32px;
 }
 
 /* ── RESET ── */
-*, *::before, *::after {  margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--cream);
+  background-color: var(--cream);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent calc(var(--ruled-gap) - 1px),
+    var(--ruled-line) calc(var(--ruled-gap) - 1px),
+    var(--ruled-line) var(--ruled-gap)
+  );
+  background-attachment: local;
   color: var(--carbon);
   font-family: 'Nunito', sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
+  cursor: none; /* nasconde il cursore default */
 }
 
-/* ── BOTTONE LINGUA  ── */
+/* ── CURSORE CUORICINO ── */
+#heart-cursor {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  font-size: 18px;
+  color: var(--rose);
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+  user-select: none;
+  filter: drop-shadow(0 1px 3px rgba(212,133,122,0.4));
+}
+
+/* ripristina cursore normale su elementi interattivi */
+a, button, input, [role="button"] {
+  cursor: none;
+}
+
+/* ── BOTTONE LINGUA ── */
 .lang-btn {
   position: fixed;
   top: 22px;
@@ -39,7 +69,7 @@ body {
   letter-spacing: 0.1em;
   padding: 7px 16px;
   border-radius: 999px;
-  cursor: pointer;
+  cursor: none;
   transition: border-color 0.2s, background 0.2s;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
@@ -48,7 +78,82 @@ body {
   background: var(--rose-light);
 }
 
-/* ── FOOTER GLOBALE  ── */
+/* ── COUNTDOWN ── */
+.countdown-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: -8px;
+}
+
+.countdown-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--mid);
+  text-transform: uppercase;
+}
+
+.countdown-numbers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.countdown-val {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--rose-dark);
+  line-height: 1;
+}
+
+.countdown-unit-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--mid);
+  text-transform: uppercase;
+}
+
+.countdown-sep {
+  font-size: 1.2rem;
+  color: var(--line);
+  margin-bottom: 14px;
+}
+
+/* ── SPOTIFY PLAYER ── */
+.spotify-wrap {
+  max-width: 520px;
+  margin: 0 auto 0;
+  padding: 50px 24px 32px;
+  display: none; /* appare solo quando la timeline è aperta */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.spotify-wrap.visible { display: flex; }
+
+.spotify-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--mid);
+  letter-spacing: 0.05em;
+}
+
+.spotify-wrap iframe {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* ── FOOTER GLOBALE ── */
 .site-footer {
   text-align: center;
   padding: 32px 24px 48px;
@@ -57,7 +162,13 @@ body {
   color: #bbb;
   letter-spacing: 0.05em;
 }
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (hover: none) {
+  #heart-cursor { display: none; }
+  body, a, button, input, [role="button"] { cursor: auto; }
 }

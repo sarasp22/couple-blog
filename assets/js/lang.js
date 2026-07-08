@@ -43,11 +43,12 @@ function applyLang() {
 
 function toggleLang() {
   lang = lang === 'it' ? 'fr' : 'it';
-  localStorage.setItem('siteLang', lang); /* salva la scelta per le altre pagine */
+  localStorage.setItem('siteLang', lang);
   applyLang();
 
-  if (typeof buildEvents  === 'function') { buildEvents(); if (activeIdx  !== null) document.getElementById(`ev-${activeIdx}`).classList.add('active'); }
-  if (typeof buildViagggi === 'function') { buildViagggi(); if (activeDest) renderGallery(); }
+  if (typeof buildEvents        === 'function') { buildEvents(); if (activeIdx !== null) document.getElementById(`ev-${activeIdx}`).classList.add('active'); }
+  if (typeof buildViagggi       === 'function') { buildViagggi(); if (activeDest) renderGallery(); }
+  if (typeof updateCountdownLang === 'function') { updateCountdownLang(); }
 }
 
 document.addEventListener('DOMContentLoaded', applyLang);
