@@ -64,7 +64,7 @@ const DESTINATIONS = [
         loc: 'Sardegna',
         desc_it: 'Tra mille spiagge, acque cristalline, puro relax, il calore del sole e tante dolci coccole. Una fuga perfetta e momenti indimenticabili che porteremo sempre nel cuore!',
         desc_fr: 'Entre mille plages, eaux cristallines, pure détente, la chaleur du soleil et plein de câlins. Une escapade parfaite et des moments inoubliables que nous garderons toujours dans notre cœur !',
-        img: 'assets/img/Sardegna.jpg'
+        img: 'assets/img/sardegna.jpg'
       },
     ]
   },
