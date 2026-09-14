@@ -3,7 +3,7 @@ const DESTINATIONS = [
     id: 'italia',
     label_it: 'Italia',
     label_fr: 'Italie',
-    pin: { x: 50, y: 37 },
+    pin: { x: 46, y: 37 },
     col: 'left',
     places: [
       {
@@ -47,7 +47,13 @@ const DESTINATIONS = [
         desc_it: 'Tra mille spiagge, acque cristalline, puro relax, il calore del sole e tante dolci coccole. Una fuga perfetta e momenti indimenticabili che porteremo sempre nel cuore!',
         desc_fr: 'Entre mille plages, eaux cristallines, pure détente, la chaleur du soleil et plein de câlins. Une escapade parfaite et des moments inoubliables que nous garderons toujours dans notre cœur !',
         img: 'assets/img/sardegna.jpg'
-      }
+      },
+      {
+        loc: 'Genova',
+        desc_it: 'Città che mi ha fatto pensare tanto alla mia Napoli (anche se Napoli per me resta sempre unica e sola), ma con quel pesto ci siamo proprio "arricriati". Piccola tappa per fare i turisti.',
+        desc_fr: 'une ville qui m\'a beaucoup fait penser à ma Naples (même si Naples reste pour moi toujours la seule et l\'unique), mais avec ce pesto, on s\'est vraiment régalés. Petite étape pour faire les touristes.',
+        img: 'assets/img/genova.jpg'
+      },
     ]
   },
   {
@@ -80,7 +86,7 @@ const DESTINATIONS = [
         desc_it: 'Che bella la Costa Azzurra, ci siamo innamorati di Nizza, tu per il mare, io per la vicinanza a casa, e qui abbiamo iniziato il nostro "progetto Nizza" top secret, chissà, magari un giorno riusciremo a realizzarlo.',
         // ERRORE CORRETTO QUI SOTTO: Inseriti i backslash per c\'est e qu\'un
         desc_fr: 'Que la Côte d\'Azur est belle, nous sommes tombés amoureux de Nice, toi pour la mer, moi pour la proximité avec la maison, et c\'est ici que nous avons commencé notre « projet Nice » top secret, qui sait, peut-être qu\'un jour nous réussirons à le réaliser.',
-        img: 'assets/img/Nizza.jpg'
+        img: 'assets/img/nizza.jpg'
       }
     ]
   },
