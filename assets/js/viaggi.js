@@ -47,7 +47,7 @@ const DESTINATIONS = [
         desc_it: 'Tra mille spiagge, acque cristalline, puro relax, il calore del sole e tante dolci coccole. Una fuga perfetta e momenti indimenticabili che porteremo sempre nel cuore!',
         desc_fr: 'Entre mille plages, eaux cristallines, pure détente, la chaleur du soleil et plein de câlins. Une escapade parfaite et des moments inoubliables que nous garderons toujours dans notre cœur !',
         img: 'assets/img/sardegna.jpg'
-      },
+      }
     ]
   },
   {
@@ -77,10 +77,11 @@ const DESTINATIONS = [
       },
       {
         loc: 'Côtes-d\'Azur',
-        desc_it: 'La Costa di Granito Rosa, grazie amore per aver guidato per tutta la Bretagna per realizzare questo mio piccolo capriccio. Come sempre in Bretagna ha piovuto, ma questo non ha impedito che fosse comunque un weekend incredibile, come tutto quello che vivo con te.',
-        desc_fr: 'La Côte de Granit Rose, merci mon amour d\'avoir conduit à travers toute la Bretagne pour réaliser ce petit caprice. Comme toujours en Bretagne, il a plu, mais cela n\'a pas empêché que ce soit un week-end incroyable, comme tout ce que je vis avec toi.',
+        desc_it: 'Che bella la Costa Azzurra, ci siamo innamorati di Nizza, tu per il mare, io per la vicinanza a casa, e qui abbiamo iniziato il nostro "progetto Nizza" top secret, chissà, magari un giorno riusciremo a realizzarlo.',
+        // ERRORE CORRETTO QUI SOTTO: Inseriti i backslash per c\'est e qu\'un
+        desc_fr: 'Que la Côte d\'Azur est belle, nous sommes tombés amoureux de Nice, toi pour la mer, moi pour la proximité avec la maison, et c\'est ici que nous avons commencé notre « projet Nice » top secret, qui sait, peut-être qu\'un jour nous réussirons à le réaliser.',
         img: 'assets/img/Nizza.jpg'
-      },
+      }
     ]
   },
   {
@@ -101,7 +102,7 @@ const DESTINATIONS = [
         desc_it: 'Il tuo regalo di compleanno per i miei 30 anni: mi hai regalato un sogno che si è realizzato, vedere l\'aurora boreale. Un altro aneddoto da aggiungere alla nostra lista di momenti assurdi: aver pagato per vederla per poi scoprire che la si poteva ammirare ogni sera gratuitamente fuori casa.',
         desc_fr: 'Ton cadeau d\'anniversaire pour mes 30 ans : tu m\'as offert un rêve devenu réalité, voir les aurores boréales. Une autre anecdote à ajouter à notre liste de moments improbables : avoir payé pour les voir pour ensuite découvrir qu\'on pouvait les admirer gratuitement chaque soir devant la maison.',
         img: 'assets/img/norvegia.jpg'
-      },
+      }
     ]
   },
   {
@@ -134,7 +135,7 @@ const DESTINATIONS = [
         desc_it: 'La fine del nostro viaggio, di nuovo all\'insegna dell\'avventura, tra giungla, animali, frutti di cacao e tanto, tantissimo sudore. Dormire in una capannina in mezzo alla foresta è stata un\'esperienza unica: abbiamo macinato chilometri a piedi, accompagnati da tante scimmiette che giocavano tra gli alberi.',
         desc_fr: 'La fin de notre voyage, à nouveau sous le signe de l\'aventure, entre jungle, animaux, fruits de cacao et beaucoup, beaucoup de sueur. Dormir dans une petite cabane au cœur de la forêt a été une expérience unique : nous avons parcouru des kilomètres à pied, entourés de petits singes qui jouaient dans les arbres.',
         img: 'assets/img/tayrona.jpg'
-      },
+      }
     ]
   },
   {
@@ -148,7 +149,7 @@ const DESTINATIONS = [
         loc: 'Istanbul',
         desc_it: 'Tra gattini e tanto kebab, abbiamo passato giorni felici in questa città magica: Istanbul. Il nostro primo viaggio itinerante in coppia, e l\'inizio di tante altre avventure insieme.',
         desc_fr: 'Entre petits chats et beaucoup de kebab, nous avons passé des jours heureux dans cette ville magique : Istanbul. Notre premier voyage itinérant en couple, et le début de tant d\'autres aventures ensemble.',
-        img: 'assets/img/instabul.jpg'
+        img: 'assets/img/instabul.jpg' // <-- Nota: il file si chiama davvero instabul.jpg o istanbul.jpg?
       },
       {
         loc: 'Cappadocia',
@@ -167,20 +168,21 @@ const DESTINATIONS = [
         desc_it: 'Dopo 10 ore di viaggio in bus siamo arrivati in un luogo che sognavo di vedere da tanto tempo. Con te realizzare i sogni sembra qualcosa di estremamente semplice: un viaggio fatto di meraviglie, introspezione e momenti che ci hanno permesso di conoscerci ancora meglio.',
         desc_fr: 'Après 10 heures de bus, nous sommes arrivés dans un endroit que je rêvais de découvrir depuis longtemps. Avec toi, réaliser mes rêves semble tellement simple : un voyage rempli de merveilles, d\'introspection et de moments qui nous ont permis de mieux nous connaître encore.',
         img: 'assets/img/pamukkale.jpg'
-      },
+      }
     ]
   }
 ];
 
 let activeDest = null;
 
-function buildViagggi() {
+function buildViaggi() {
   const leftCol = document.getElementById('destLeft');
   const rightCol = document.getElementById('destRight');
   const mapWrap = document.getElementById('mapWrap');
-  leftCol.innerHTML = '';
-  rightCol.innerHTML = '';
-  mapWrap.querySelectorAll('.map-pin').forEach(p => p.remove());
+
+  if (leftCol) leftCol.innerHTML = '';
+  if (rightCol) rightCol.innerHTML = '';
+  if (mapWrap) mapWrap.querySelectorAll('.map-pin').forEach(p => p.remove());
 
   const it = lang === 'it';
 
@@ -189,7 +191,8 @@ function buildViagggi() {
     pill.className = 'dest-pill' + (activeDest === dest.id ? ' active' : '');
     pill.textContent = it ? dest.label_it : dest.label_fr;
     pill.addEventListener('click', () => selectDest(dest.id));
-    (dest.col === 'left' ? leftCol : rightCol).appendChild(pill);
+    if (dest.col === 'left' && leftCol) leftCol.appendChild(pill);
+    if (dest.col === 'right' && rightCol) rightCol.appendChild(pill);
 
     const pin = document.createElement('div');
     pin.className = 'map-pin' + (activeDest === dest.id ? ' active' : '');
@@ -197,13 +200,13 @@ function buildViagggi() {
     pin.style.top  = dest.pin.y + '%';
     pin.title = it ? dest.label_it : dest.label_fr;
     pin.addEventListener('click', () => selectDest(dest.id));
-    mapWrap.appendChild(pin);
+    if (mapWrap) mapWrap.appendChild(pin);
   });
 }
 
 function selectDest(id) {
   activeDest = activeDest === id ? null : id;
-  buildViagggi();
+  buildViaggi();
   renderGallery();
 }
 
@@ -211,6 +214,8 @@ function renderGallery() {
   const gallery = document.getElementById('viaggiGallery');
   const grid    = document.getElementById('galleryGrid');
   const title   = document.getElementById('galleryTitle');
+
+  if (!gallery || !grid || !title) return; // Previene errori se l'HTML manca
 
   if (!activeDest) {
     gallery.classList.remove('active');
@@ -240,4 +245,4 @@ function renderGallery() {
   setTimeout(() => gallery.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
 }
 
-document.addEventListener("DOMContentLoaded", () => { buildViagggi(); });
+document.addEventListener("DOMContentLoaded", () => { buildViaggi(); });
