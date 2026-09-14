@@ -175,38 +175,38 @@ const DESTINATIONS = [
 
 let activeDest = null;
 
-function buildViaggi() {
+function buildViagggi() {
   const leftCol = document.getElementById('destLeft');
   const rightCol = document.getElementById('destRight');
   const mapWrap = document.getElementById('mapWrap');
-
-  if (leftCol) leftCol.innerHTML = '';
-  if (rightCol) rightCol.innerHTML = '';
-  if (mapWrap) mapWrap.querySelectorAll('.map-pin').forEach(p => p.remove());
+  leftCol.innerHTML = '';
+  rightCol.innerHTML = '';
+  mapWrap.querySelectorAll('.map-pin').forEach(p => p.remove());
 
   const it = lang === 'it';
 
   DESTINATIONS.forEach(dest => {
+    /* pillola */
     const pill = document.createElement('span');
     pill.className = 'dest-pill' + (activeDest === dest.id ? ' active' : '');
     pill.textContent = it ? dest.label_it : dest.label_fr;
     pill.addEventListener('click', () => selectDest(dest.id));
-    if (dest.col === 'left' && leftCol) leftCol.appendChild(pill);
-    if (dest.col === 'right' && rightCol) rightCol.appendChild(pill);
+    (dest.col === 'left' ? leftCol : rightCol).appendChild(pill);
 
+    /* pin sulla mappa */
     const pin = document.createElement('div');
     pin.className = 'map-pin' + (activeDest === dest.id ? ' active' : '');
     pin.style.left = dest.pin.x + '%';
     pin.style.top  = dest.pin.y + '%';
     pin.title = it ? dest.label_it : dest.label_fr;
     pin.addEventListener('click', () => selectDest(dest.id));
-    if (mapWrap) mapWrap.appendChild(pin);
+    mapWrap.appendChild(pin);
   });
 }
 
 function selectDest(id) {
   activeDest = activeDest === id ? null : id;
-  buildViaggi();
+  buildViagggi();
   renderGallery();
 }
 
@@ -214,8 +214,6 @@ function renderGallery() {
   const gallery = document.getElementById('viaggiGallery');
   const grid    = document.getElementById('galleryGrid');
   const title   = document.getElementById('galleryTitle');
-
-  if (!gallery || !grid || !title) return; // Previene errori se l'HTML manca
 
   if (!activeDest) {
     gallery.classList.remove('active');
@@ -245,4 +243,4 @@ function renderGallery() {
   setTimeout(() => gallery.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
 }
 
-document.addEventListener("DOMContentLoaded", () => { buildViaggi(); });
+document.addEventListener("DOMContentLoaded", () => { buildViagggi(); });
