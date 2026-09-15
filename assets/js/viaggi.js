@@ -3,7 +3,7 @@ const DESTINATIONS = [
     id: 'italia',
     label_it: 'Italia',
     label_fr: 'Italie',
-    pin: { x: 46, y: 37 },
+    pin: { x: 50, y: 34 },
     col: 'left',
     places: [
       {
@@ -60,7 +60,7 @@ const DESTINATIONS = [
     id: 'francia',
     label_it: 'Francia',
     label_fr: 'France',
-    pin: { x: 50, y: 34 },
+    pin: { x: 49, y: 33 },
     col: 'left',
     places: [
       {
