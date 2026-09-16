@@ -56,8 +56,8 @@ const DESTINATIONS = [
       },
       {
         loc: 'Cinque Terre',
-        desc_it: 'Città che mi ha fatto pensare tanto alla mia Napoli (anche se Napoli per me resta sempre unica e sola), ma con quel pesto ci siamo proprio "arricriati". Piccola tappa per fare i turisti.',
-        desc_fr: 'une ville qui m\'a beaucoup fait penser à ma Naples (même si Naples reste pour moi toujours la seule et l\'unique), mais avec ce pesto, on s\'est vraiment régalés. Petite étape pour faire les touristes.',
+        desc_it: 'Eccoci alla scoperta delle Cinque Terre tra treni, tantissimi turisti e trekking panoramici, dove io scappavo dal sole e sudavamo entrambi sette camicie.',
+        desc_fr: 'Nous voici à la découverte des Cinque Terre entre les trains, la foule de touristes et les randonnées panoramiques, où je fuyais le soleil et où nous avons tous les deux transpiré à grosses gouttes.',
         img: 'assets/img/cinqueterre.jpg'
       },
     ]
