@@ -58,7 +58,7 @@ const DESTINATIONS = [
         loc: 'Cinque Terre',
         desc_it: 'Città che mi ha fatto pensare tanto alla mia Napoli (anche se Napoli per me resta sempre unica e sola), ma con quel pesto ci siamo proprio "arricriati". Piccola tappa per fare i turisti.',
         desc_fr: 'une ville qui m\'a beaucoup fait penser à ma Naples (même si Naples reste pour moi toujours la seule et l\'unique), mais avec ce pesto, on s\'est vraiment régalés. Petite étape pour faire les touristes.',
-        img: 'assets/img/genova.jpg'
+        img: 'assets/img/cinqueterre.jpg'
       },
     ]
   },
