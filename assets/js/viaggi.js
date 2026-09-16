@@ -66,7 +66,7 @@ const DESTINATIONS = [
     id: 'francia',
     label_it: 'Francia',
     label_fr: 'France',
-    pin: { x: 48, y: 27 },
+    pin: { x: 48, y: 30 },
     col: 'left',
     places: [
       {
