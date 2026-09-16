@@ -54,6 +54,12 @@ const DESTINATIONS = [
         desc_fr: 'une ville qui m\'a beaucoup fait penser à ma Naples (même si Naples reste pour moi toujours la seule et l\'unique), mais avec ce pesto, on s\'est vraiment régalés. Petite étape pour faire les touristes.',
         img: 'assets/img/genova.jpg'
       },
+      {
+        loc: 'Cinque Terre',
+        desc_it: 'Città che mi ha fatto pensare tanto alla mia Napoli (anche se Napoli per me resta sempre unica e sola), ma con quel pesto ci siamo proprio "arricriati". Piccola tappa per fare i turisti.',
+        desc_fr: 'une ville qui m\'a beaucoup fait penser à ma Naples (même si Naples reste pour moi toujours la seule et l\'unique), mais avec ce pesto, on s\'est vraiment régalés. Petite étape pour faire les touristes.',
+        img: 'assets/img/genova.jpg'
+      },
     ]
   },
   {
@@ -64,10 +70,16 @@ const DESTINATIONS = [
     col: 'left',
     places: [
       {
-        loc: 'Rocamadour',
+        loc: 'La Roque-gageac',
         desc_it: 'Il primo regalo di compleanno che mi hai fatto è stato qualcosa di stupendo: un viaggio a sorpresa che porto nel cuore. Mi ha fatto vedere quanto amore e impegno metti per rendermi felice, e mi ha permesso di conoscerti ancora di più.',
         desc_fr: 'Le premier cadeau d\'anniversaire que tu m\'as fait a été quelque chose de magnifique : un voyage surprise que je garde dans le cœur. Il m\'a montré tout l\'amour et l\'engagement que tu mets pour me rendre heureuse, et m\'a permis de te connaître encore davantage.',
-        img: 'assets/img/rocamadour.jpeg'
+        img: 'assets/img/roque.jpeg'
+      },
+      {
+        loc: 'Rocamadour',
+        desc_it: 'Tra la visita ai villaggi più belli della Francia, conversazioni scomode e scoperte continue, questo viaggio regalo mi ha davvero fatta innamorare di te.',
+        desc_fr: 'Entre la visite des plus beaux villages de France, les conversations inconfortables et les découvertes constantes, ce voyage cadeau m\'a vraiment fait tomber amoureuse de toi.',
+        img: 'assets/img/rocamadour.jpg'
       },
       {
         loc: 'Saint-Malo',
@@ -82,12 +94,23 @@ const DESTINATIONS = [
         img: 'assets/img/granito.jpg'
       },
       {
-        loc: 'Côtes-d\'Azur',
-        desc_it: 'Che bella la Costa Azzurra, ci siamo innamorati di Nizza, tu per il mare, io per la vicinanza a casa, e qui abbiamo iniziato il nostro "progetto Nizza" top secret, chissà, magari un giorno riusciremo a realizzarlo.',
-        // ERRORE CORRETTO QUI SOTTO: Inseriti i backslash per c\'est e qu\'un
-        desc_fr: 'Que la Côte d\'Azur est belle, nous sommes tombés amoureux de Nice, toi pour la mer, moi pour la proximité avec la maison, et c\'est ici que nous avons commencé notre « projet Nice » top secret, qui sait, peut-être qu\'un jour nous réussirons à le réaliser.',
+        loc: 'Nice',
+        desc_it: 'Che bella Nizza e la Costa Azzurra, ci siamo innamorati di Nizza, tu per il mare, io per la vicinanza a casa, e qui abbiamo iniziato il nostro "progetto Nizza" top secret, chissà, magari un giorno riusciremo a realizzarlo.',
+        desc_fr: 'Que Nice et la Côte d\'Azur est belle, nous sommes tombés amoureux de Nice, toi pour la mer, moi pour la proximité avec la maison, et c\'est ici que nous avons commencé notre « projet Nice » top secret, qui sait, peut-être qu\'un jour nous réussirons à le réaliser.',
         img: 'assets/img/nizza.jpg'
-      }
+      },
+      {
+        loc: 'Menton',
+        desc_it: 'Qui di nuovo ci siamo innamorati dei vicoli dalle sfumature del giallo e, anche se il mare non ci ha fatto impazzire, l\'aria italiana di Menton ci ha catturati.',
+        desc_fr: 'Ici aussi, nous sommes tombés amoureux des ruelles aux nuances de jaune et, même si la mer ne nous a pas emballés, l\'air italien de Menton nous a captivés.',
+        img: 'assets/img/menton.jpg'
+      },
+      {
+        loc: 'Eze',
+        desc_it: 'fare trekking con i sandaletti non è stata un\'ottima idea, però Èze... che bella sorpresa è stata per entrambi! Un piccolo borghetto che abbiamo avuto la fortuna di scoprire anche grazie al nostro driver parigino David. Magari un giorno faremo noi la sua vita, chissà.',
+        desc_fr: 'faire de la randonnée en petites sandales n\'a pas été une excellente idée, mais Èze... quelle belle surprise ça a été pour nous deux ! Un petit village que nous avons eu la chance de découvrir aussi grâce à notre chauffeur parisien David. Peut-être qu\'un jour, c\'est nous qui mènerons sa vie, qui sait.',
+        img: 'assets/img/eze.jpg'
+      },
     ]
   },
   {
@@ -192,14 +215,12 @@ function buildViagggi() {
   const it = lang === 'it';
 
   DESTINATIONS.forEach(dest => {
-    /* pillola */
     const pill = document.createElement('span');
     pill.className = 'dest-pill' + (activeDest === dest.id ? ' active' : '');
     pill.textContent = it ? dest.label_it : dest.label_fr;
     pill.addEventListener('click', () => selectDest(dest.id));
     (dest.col === 'left' ? leftCol : rightCol).appendChild(pill);
 
-    /* pin sulla mappa */
     const pin = document.createElement('div');
     pin.className = 'map-pin' + (activeDest === dest.id ? ' active' : '');
     pin.style.left = dest.pin.x + '%';
