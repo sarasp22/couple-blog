@@ -148,6 +148,24 @@ const DESTINATIONS = [
         img: 'assets/img/salento.jpg'
       },
       {
+        loc: 'Cali',
+        desc_it: 'Qui abbiamo potuto scoprire che sei un ballerino provetto, hai il ritmo nel sangue ed è stato divertente vederti avere anche una fan. Da qui abbiamo capito che sarebbe bello, magari un giorno, prendere lezioni di ballo.',
+        desc_fr: 'Ici, nous avons pu découvrir que tu es un danseur hors pair, tu as le rythme dans la peau et c\'était amusant de voir que tu avais même une fan. De là, nous avons compris que ce serait chouette, peut-être un jour, de prendre des cours de danse.',
+        img: 'assets/img/cali.jpg'
+      },
+      {
+        loc: 'Las Lajas',
+        desc_it: 'Nonostante Ipiales e il confine della Colombia con l\'Ecuador ci abbiano mostrato un aspetto abbastanza crudo di questo posto, questa cattedrale ci ha lasciato letteralmente senza fiato, in tutti i sensi.',
+        desc_fr: 'Même si Ipiales et la frontière entre la Colombie et l\'Équateur nous ont montré un aspect assez brut de cet endroit, cette cathédrale nous a littéralement coupé le souffle, dans tous les sens du terme.',
+        img: 'assets/img/laslajas.jpg'
+      },
+      {
+        loc: 'Quito',
+        desc_it: 'Quito con le sue altezze mozzafiato, il freddino e le passeggiate, ci ha regalato anche tanti giochi in cui hai vinto tu, alla Mitad del Mundo.',
+        desc_fr: 'Quito avec ses altitudes à couper le souffle, son petit froid et ses promenades, nous a aussi offert plein de petits jeux où c\'est toi qui as gagné, à la Mitad del Mundo.',
+        img: 'assets/img/quito.jpg'
+      },
+      {
         loc: 'Galapagos',
         desc_it: 'La mia prima immersione, e una delle tante per te: non avrei mai immaginato di vivere un\'esperienza del genere prima di conoscerti. Un momento indimenticabile, in isole straordinarie come le Galápagos, tra una natura e degli animali semplicemente incredibili.',
         desc_fr: 'Ma première plongée, et une parmi tant d\'autres pour toi : je n\'aurais jamais imaginé vivre une expérience comme celle-ci avant de te rencontrer. Un moment inoubliable, dans des îles extraordinaires comme les Galápagos, au milieu d\'une nature et d\'animaux tout simplement incroyables.',
